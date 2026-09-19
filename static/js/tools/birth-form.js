@@ -308,7 +308,7 @@ export function readBirthForm(root) {
   if (
     !Number.isFinite(lat) ||
     !Number.isFinite(lon) ||
-    !Number.isFinite(tz)
+    !timeZone
   ) {
     throw new Error("Please find the place of birth before generating the chart.");
   }

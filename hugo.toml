@@ -28,7 +28,7 @@ enableRobotsTXT = true
     weight = 4
   [[menu.main]]
     name = "Kundali"
-    url = "/kundali/"
+    url = "/tools/kundali-chart/"
     weight = 5
   [[menu.main]]
     name = "Rashifal"

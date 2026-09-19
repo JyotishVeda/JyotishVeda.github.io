@@ -6,6 +6,8 @@ icon: "◈"
 weight: 1
 date: 2026-01-15
 description: "Generate a full Vedic birth chart — lagna, nine grahas with degrees and nakshatras, whole-sign bhavas and the complete Vimshottari dasha sequence, in North or South Indian style."
+aliases:
+  - /kundali/
 ---
 
 ## What the chart contains
