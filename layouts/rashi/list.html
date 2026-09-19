@@ -1,0 +1,40 @@
+{{ define "main" }}
+<article class="page wide">
+  {{ partial "crumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  <p class="lede">{{ .Description }}</p>
+  {{ .Content }}
+
+  <div class="grid">
+    {{ range $key, $r := site.Data.rashi }}
+    <a href="{{ printf "rashi/%s/" $key | relURL }}" class="tile reveal">
+      <span class="tile-glyph">{{ $r.symbol }}</span>
+      <span class="tile-body"><strong>{{ $r.name }}</strong><small>{{ $r.english }} · {{ $r.lord }}</small></span>
+      <span class="tile-tag">{{ $r.span }}</span>
+    </a>
+    {{ end }}
+  </div>
+
+  <h2>Comparison table</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>#</th><th>Rashi</th><th>English</th><th>Span</th><th>Lord</th><th>Tattva</th><th>Swabhava</th><th>Varna</th></tr></thead>
+      <tbody>
+        {{ range $key, $r := site.Data.rashi }}
+        <tr>
+          <td>{{ add $r.index 1 }}</td>
+          <td><a href="{{ printf "rashi/%s/" $key | relURL }}">{{ $r.name }}</a></td>
+          <td>{{ $r.english }}</td>
+          <td class="mono">{{ $r.span }}</td>
+          <td>{{ $r.lord }}</td>
+          <td>{{ $r.tattva }}</td>
+          <td>{{ $r.swabhava }}</td>
+          <td>{{ $r.varna }}</td>
+        </tr>
+        {{ end }}
+      </tbody>
+    </table>
+  </div>
+  {{ partial "ad-slot.html" (dict "Site" .Site "slot" "2222222222") }}
+</article>
+{{ end }}

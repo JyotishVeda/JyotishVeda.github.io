@@ -1,0 +1,61 @@
+{{ define "main" }}
+{{ $n := index site.Data.nakshatras .Params.key }}
+<article class="page">
+  {{ partial "crumbs.html" . }}
+  <p class="eyebrow">NAKSHATRA {{ $n.number }} OF 27 · {{ $n.span }}</p>
+  <h1>{{ $n.name }} Nakshatra</h1>
+  <p class="lede">{{ .Description }}</p>
+
+  <div class="factbar">
+    <div class="fact"><span>Lord</span><strong>{{ $n.lord }}</strong></div>
+    <div class="fact"><span>Deity</span><strong>{{ $n.deity }}</strong></div>
+    <div class="fact"><span>Gana</span><strong>{{ $n.gana }}</strong></div>
+    <div class="fact"><span>Yoni</span><strong>{{ $n.yoni }}</strong></div>
+    <div class="fact"><span>Nadi</span><strong>{{ $n.nadi }}</strong></div>
+  </div>
+
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Attribute</th><th>Traditional association</th></tr></thead>
+    <tbody>
+      <tr><td>Number</td><td>{{ $n.number }} of 27</td></tr>
+      <tr><td>Sidereal span</td><td>{{ $n.span }}</td></tr>
+      <tr><td>Starting longitude</td><td>{{ $n.start }}°</td></tr>
+      <tr><td>Nakshatra lord (dasha lord)</td><td>{{ $n.lord }}</td></tr>
+      <tr><td>Presiding deity</td><td>{{ $n.deity }}</td></tr>
+      <tr><td>Symbol</td><td>{{ $n.symbol }}</td></tr>
+      <tr><td>Gana</td><td>{{ $n.gana }}</td></tr>
+      <tr><td>Yoni</td><td>{{ $n.yoni }}</td></tr>
+      <tr><td>Nadi</td><td>{{ $n.nadi }}</td></tr>
+      <tr><td>Varna</td><td>{{ $n.varna }}</td></tr>
+      <tr><td>Guna</td><td>{{ $n.guna }}</td></tr>
+      <tr><td>Direction</td><td>{{ $n.direction }}</td></tr>
+      <tr><td>Primary rashi</td><td>{{ (index site.Data.rashi $n.rashi).name }}</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  {{ .Content }}
+
+  <h2>Keyword themes</h2>
+  <div class="pill-row">{{ range $n.keywords }}<span class="pill">{{ . }}</span>{{ end }}</div>
+
+  <h2>Work traditionally associated with {{ $n.name }}</h2>
+  <p>{{ $n.careers }}.</p>
+
+  {{ partial "ad-slot.html" (dict "Site" .Site "slot" "5555555555") }}
+
+  <h2>Use this in a real chart</h2>
+  <div class="next-links">
+    <a href="{{ "tools/nakshatra-finder/" | relURL }}"><span>CALCULATE</span>Find your janma nakshatra and pada</a>
+    <a href="{{ "tools/vimshottari-dasha/" | relURL }}"><span>TIMING</span>Vimshottari dasha from this nakshatra</a>
+    <a href="{{ printf "graha/%s/" (lower (index (split $n.lord " ") 0)) | relURL }}"><span>LORD</span>About {{ $n.lord }}</a>
+    <a href="{{ "tools/kundali-milan/" | relURL }}"><span>MATCHING</span>Gana, yoni and nadi in Guna Milan</a>
+  </div>
+
+  <div class="prev-next">
+    <span>{{ with .PrevInSection }}<a href="{{ .RelPermalink }}">← {{ .Title }}</a>{{ end }}</span>
+    <span>{{ with .NextInSection }}<a href="{{ .RelPermalink }}">{{ .Title }} →</a>{{ end }}</span>
+  </div>
+</article>
+{{ end }}

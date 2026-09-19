@@ -1,0 +1,512 @@
+ashwini:
+  number: 1
+  name: "Ashwini"
+  span: "0°00′ – 13°20′ Mesha"
+  start: 0.0
+  lord: "Ketu"
+  deity: "Ashwini Kumaras"
+  symbol: "Horse's head"
+  rashi: "mesha"
+  gana: "Deva"
+  yoni: "Horse (male)"
+  nadi: "Adi"
+  varna: "Vaishya"
+  guna: "Rajas"
+  direction: "South"
+  keywords: ["speed", "healing", "fresh starts", "restlessness"]
+  careers: "Emergency medicine, veterinary work, transport, sports, first-response roles"
+  summary: "First nakshatra — horse-swift beginnings and healing."
+
+bharani:
+  number: 2
+  name: "Bharani"
+  span: "13°20′ – 26°40′ Mesha"
+  start: 13.3333
+  lord: "Shukra (Venus)"
+  deity: "Yama"
+  symbol: "Yoni (womb)"
+  rashi: "mesha"
+  gana: "Manushya"
+  yoni: "Elephant (male)"
+  nadi: "Madhya"
+  varna: "Mleccha"
+  guna: "Rajas"
+  direction: "South"
+  keywords: ["bearing", "restraint", "transformation", "extremes"]
+  careers: "Obstetrics, hospice and end-of-life care, law enforcement, the arts, agriculture"
+  summary: "The bearer — creation, limits and the passage between states."
+
+krittika:
+  number: 3
+  name: "Krittika"
+  span: "26°40′ Mesha – 10°00′ Vrishabha"
+  start: 26.6667
+  lord: "Surya (Sun)"
+  deity: "Agni"
+  symbol: "Razor, flame"
+  rashi: "mesha"
+  gana: "Rakshasa"
+  yoni: "Sheep (female)"
+  nadi: "Antya"
+  varna: "Brahmin"
+  guna: "Rajas"
+  direction: "North"
+  keywords: ["cutting", "purification", "sharpness", "nourishment"]
+  careers: "Surgery, cooking and food science, metallurgy, editing, defence services"
+  summary: "The cutter — fire that both purifies and consumes."
+
+rohini:
+  number: 4
+  name: "Rohini"
+  span: "10°00′ – 23°20′ Vrishabha"
+  start: 40.0
+  lord: "Chandra (Moon)"
+  deity: "Brahma / Prajapati"
+  symbol: "Ox cart, chariot"
+  rashi: "vrishabha"
+  gana: "Manushya"
+  yoni: "Serpent (male)"
+  nadi: "Antya"
+  varna: "Shudra"
+  guna: "Rajas"
+  direction: "East"
+  keywords: ["growth", "beauty", "fertility", "attachment"]
+  careers: "Agriculture, textiles, cosmetics, hospitality, performing arts, banking"
+  summary: "The red one — the Moon's favourite, fertile and magnetic."
+
+mrigashira:
+  number: 5
+  name: "Mrigashira"
+  span: "23°20′ Vrishabha – 6°40′ Mithuna"
+  start: 53.3333
+  lord: "Mangal (Mars)"
+  deity: "Soma (Chandra)"
+  symbol: "Deer's head"
+  rashi: "vrishabha"
+  gana: "Deva"
+  yoni: "Serpent (female)"
+  nadi: "Madhya"
+  varna: "Shudra"
+  guna: "Tamas"
+  direction: "South"
+  keywords: ["searching", "curiosity", "sensitivity", "wandering"]
+  careers: "Research, travel writing, surveying, perfumery, textiles, real estate scouting"
+  summary: "The searching deer — perpetual seeking and light-footed curiosity."
+
+ardra:
+  number: 6
+  name: "Ardra"
+  span: "6°40′ – 20°00′ Mithuna"
+  start: 66.6667
+  lord: "Rahu"
+  deity: "Rudra"
+  symbol: "Teardrop, diamond"
+  rashi: "mithuna"
+  gana: "Manushya"
+  yoni: "Dog (female)"
+  nadi: "Adi"
+  varna: "Butcher"
+  guna: "Tamas"
+  direction: "North"
+  keywords: ["storm", "grief", "breakthrough", "effort"]
+  careers: "Data and analytics, chemistry, disaster response, psychology, electronics"
+  summary: "The moist one — storm, tears and the clarity that follows."
+
+punarvasu:
+  number: 7
+  name: "Punarvasu"
+  span: "20°00′ Mithuna – 3°20′ Karka"
+  start: 80.0
+  lord: "Guru (Jupiter)"
+  deity: "Aditi"
+  symbol: "Quiver of arrows"
+  rashi: "mithuna"
+  gana: "Deva"
+  yoni: "Cat (female)"
+  nadi: "Adi"
+  varna: "Vaishya"
+  guna: "Sattva"
+  direction: "North"
+  keywords: ["return", "renewal", "shelter", "philosophy"]
+  careers: "Teaching, publishing, counselling, hospitality, spiritual instruction"
+  summary: "Return of the light — recovery, repetition and safe re-entry."
+
+pushya:
+  number: 8
+  name: "Pushya"
+  span: "3°20′ – 16°40′ Karka"
+  start: 93.3333
+  lord: "Shani (Saturn)"
+  deity: "Brihaspati"
+  symbol: "Cow's udder, lotus"
+  rashi: "karka"
+  gana: "Deva"
+  yoni: "Sheep (male)"
+  nadi: "Madhya"
+  varna: "Kshatriya"
+  guna: "Tamas"
+  direction: "East"
+  keywords: ["nourishment", "duty", "protection", "orthodoxy"]
+  careers: "Public administration, priesthood, nutrition, dairy, social work, caregiving"
+  summary: "The nourisher — widely called the most auspicious nakshatra."
+
+ashlesha:
+  number: 9
+  name: "Ashlesha"
+  span: "16°40′ – 30°00′ Karka"
+  start: 106.6667
+  lord: "Budha (Mercury)"
+  deity: "Nagas"
+  symbol: "Coiled serpent"
+  rashi: "karka"
+  gana: "Rakshasa"
+  yoni: "Cat (male)"
+  nadi: "Antya"
+  varna: "Mleccha"
+  guna: "Sattva"
+  direction: "South"
+  keywords: ["embrace", "hypnosis", "strategy", "poison"]
+  careers: "Pharmacology, psychology, negotiation, intelligence work, toxicology"
+  summary: "The embracer — coiled, penetrating and strategic."
+
+magha:
+  number: 10
+  name: "Magha"
+  span: "0°00′ – 13°20′ Simha"
+  start: 120.0
+  lord: "Ketu"
+  deity: "Pitris (ancestors)"
+  symbol: "Royal throne"
+  rashi: "simha"
+  gana: "Rakshasa"
+  yoni: "Rat (male)"
+  nadi: "Antya"
+  varna: "Shudra"
+  guna: "Tamas"
+  direction: "West"
+  keywords: ["lineage", "throne", "tradition", "honour"]
+  careers: "Government service, heritage and archives, family business, ritual, museums"
+  summary: "The mighty — inherited position and ancestral authority."
+
+purva-phalguni:
+  number: 11
+  name: "Purva Phalguni"
+  span: "13°20′ – 26°40′ Simha"
+  start: 133.3333
+  lord: "Shukra (Venus)"
+  deity: "Bhaga"
+  symbol: "Front legs of a bed, hammock"
+  rashi: "simha"
+  gana: "Manushya"
+  yoni: "Rat (female)"
+  nadi: "Madhya"
+  varna: "Brahmin"
+  guna: "Rajas"
+  direction: "North"
+  keywords: ["pleasure", "rest", "romance", "creativity"]
+  careers: "Entertainment, events, fashion, interior design, hospitality, music"
+  summary: "The former red one — leisure, charm and creative enjoyment."
+
+uttara-phalguni:
+  number: 12
+  name: "Uttara Phalguni"
+  span: "26°40′ Simha – 10°00′ Kanya"
+  start: 146.6667
+  lord: "Surya (Sun)"
+  deity: "Aryaman"
+  symbol: "Back legs of a bed"
+  rashi: "simha"
+  gana: "Manushya"
+  yoni: "Cow (male)"
+  nadi: "Adi"
+  varna: "Kshatriya"
+  guna: "Rajas"
+  direction: "East"
+  keywords: ["patronage", "contracts", "friendship", "service"]
+  careers: "Civil service, HR, philanthropy, medicine, contract law, partnership roles"
+  summary: "The latter red one — alliance, generosity and dependable commitment."
+
+hasta:
+  number: 13
+  name: "Hasta"
+  span: "10°00′ – 23°20′ Kanya"
+  start: 160.0
+  lord: "Chandra (Moon)"
+  deity: "Savitr (Sun)"
+  symbol: "Open palm"
+  rashi: "kanya"
+  gana: "Deva"
+  yoni: "Buffalo (female)"
+  nadi: "Adi"
+  varna: "Vaishya"
+  guna: "Rajas"
+  direction: "South"
+  keywords: ["skill", "craft", "dexterity", "cleverness"]
+  careers: "Surgery, crafts, massage therapy, programming, illusion and performance, trade"
+  summary: "The hand — manual skill and the capacity to grasp."
+
+chitra:
+  number: 14
+  name: "Chitra"
+  span: "23°20′ Kanya – 6°40′ Tula"
+  start: 173.3333
+  lord: "Mangal (Mars)"
+  deity: "Tvashtar / Vishwakarma"
+  symbol: "Bright jewel, pearl"
+  rashi: "kanya"
+  gana: "Rakshasa"
+  yoni: "Tiger (female)"
+  nadi: "Madhya"
+  varna: "Shudra"
+  guna: "Tamas"
+  direction: "West"
+  keywords: ["design", "brilliance", "form", "glamour"]
+  careers: "Architecture, jewellery design, photography, engineering, fashion"
+  summary: "The brilliant — the cosmic architect's eye for form."
+
+swati:
+  number: 15
+  name: "Swati"
+  span: "6°40′ – 20°00′ Tula"
+  start: 186.6667
+  lord: "Rahu"
+  deity: "Vayu"
+  symbol: "Young shoot swaying in wind, coral"
+  rashi: "tula"
+  gana: "Deva"
+  yoni: "Buffalo (male)"
+  nadi: "Antya"
+  varna: "Butcher"
+  guna: "Tamas"
+  direction: "North"
+  keywords: ["independence", "movement", "trade", "flexibility"]
+  careers: "Trading and markets, aviation, diplomacy, logistics, independent business"
+  summary: "The self-going — wind-borne independence and commerce."
+
+vishakha:
+  number: 16
+  name: "Vishakha"
+  span: "20°00′ Tula – 3°20′ Vrishchika"
+  start: 200.0
+  lord: "Guru (Jupiter)"
+  deity: "Indra and Agni"
+  symbol: "Triumphal archway, potter's wheel"
+  rashi: "tula"
+  gana: "Rakshasa"
+  yoni: "Tiger (male)"
+  nadi: "Antya"
+  varna: "Mleccha"
+  guna: "Sattva"
+  direction: "East"
+  keywords: ["ambition", "goal", "focus", "impatience"]
+  careers: "Competitive sport, sales targets, research, military strategy, politics"
+  summary: "The forked one — single-pointed ambition toward a chosen goal."
+
+anuradha:
+  number: 17
+  name: "Anuradha"
+  span: "3°20′ – 16°40′ Vrishchika"
+  start: 213.3333
+  lord: "Shani (Saturn)"
+  deity: "Mitra"
+  symbol: "Lotus, staff"
+  rashi: "vrishchika"
+  gana: "Deva"
+  yoni: "Deer (female)"
+  nadi: "Madhya"
+  varna: "Shudra"
+  guna: "Tamas"
+  direction: "South"
+  keywords: ["friendship", "devotion", "organisation", "loyalty"]
+  careers: "Team leadership, diplomacy, occult study, mining, NGO and community work"
+  summary: "The follower of Radha — friendship that survives difficulty."
+
+jyeshtha:
+  number: 18
+  name: "Jyeshtha"
+  span: "16°40′ – 30°00′ Vrishchika"
+  start: 226.6667
+  lord: "Budha (Mercury)"
+  deity: "Indra"
+  symbol: "Circular amulet, earring"
+  rashi: "vrishchika"
+  gana: "Rakshasa"
+  yoni: "Deer (male)"
+  nadi: "Adi"
+  varna: "Servant"
+  guna: "Sattva"
+  direction: "West"
+  keywords: ["seniority", "protection", "rivalry", "concealment"]
+  careers: "Senior management, security, defence, occult research, crisis handling"
+  summary: "The eldest — seniority, protection and the burden of rank."
+
+mula:
+  number: 19
+  name: "Mula"
+  span: "0°00′ – 13°20′ Dhanu"
+  start: 240.0
+  lord: "Ketu"
+  deity: "Nirriti"
+  symbol: "Bunch of tied roots"
+  rashi: "dhanu"
+  gana: "Rakshasa"
+  yoni: "Dog (male)"
+  nadi: "Adi"
+  varna: "Butcher"
+  guna: "Tamas"
+  direction: "North"
+  keywords: ["roots", "investigation", "dissolution", "philosophy"]
+  careers: "Research, medicine and pharmacology, philosophy, herbalism, investigation"
+  summary: "The root — digging to the origin, dissolving what is false."
+
+purva-ashadha:
+  number: 20
+  name: "Purva Ashadha"
+  span: "13°20′ – 26°40′ Dhanu"
+  start: 253.3333
+  lord: "Shukra (Venus)"
+  deity: "Apas (waters)"
+  symbol: "Elephant tusk, fan"
+  rashi: "dhanu"
+  gana: "Manushya"
+  yoni: "Monkey (male)"
+  nadi: "Madhya"
+  varna: "Brahmin"
+  guna: "Rajas"
+  direction: "East"
+  keywords: ["invincibility", "conviction", "purification", "debate"]
+  careers: "Debate and advocacy, shipping and water resources, teaching, performance"
+  summary: "The undefeated — conviction that does not accept defeat."
+
+uttara-ashadha:
+  number: 21
+  name: "Uttara Ashadha"
+  span: "26°40′ Dhanu – 10°00′ Makara"
+  start: 266.6667
+  lord: "Surya (Sun)"
+  deity: "Vishvadevas"
+  symbol: "Elephant tusk, planks of a bed"
+  rashi: "dhanu"
+  gana: "Manushya"
+  yoni: "Mongoose"
+  nadi: "Antya"
+  varna: "Kshatriya"
+  guna: "Sattva"
+  direction: "South"
+  keywords: ["final victory", "integrity", "endurance", "leadership"]
+  careers: "Public office, institution-building, law, long-horizon research, ethics roles"
+  summary: "The later invincible one — victory earned slowly and kept."
+
+shravana:
+  number: 22
+  name: "Shravana"
+  span: "10°00′ – 23°20′ Makara"
+  start: 280.0
+  lord: "Chandra (Moon)"
+  deity: "Vishnu"
+  symbol: "Ear, three footprints"
+  rashi: "makara"
+  gana: "Deva"
+  yoni: "Monkey (female)"
+  nadi: "Antya"
+  varna: "Mleccha"
+  guna: "Rajas"
+  direction: "North"
+  keywords: ["listening", "learning", "scripture", "reputation"]
+  careers: "Teaching, linguistics, audio and media, law, counselling, scriptural study"
+  summary: "The hearing — knowledge received by listening."
+
+dhanishta:
+  number: 23
+  name: "Dhanishta"
+  span: "23°20′ Makara – 6°40′ Kumbha"
+  start: 293.3333
+  lord: "Mangal (Mars)"
+  deity: "Eight Vasus"
+  symbol: "Drum (mridanga)"
+  rashi: "makara"
+  gana: "Rakshasa"
+  yoni: "Lion (female)"
+  nadi: "Madhya"
+  varna: "Servant"
+  guna: "Tamas"
+  direction: "East"
+  keywords: ["rhythm", "wealth", "music", "group work"]
+  careers: "Music and percussion, property, group enterprise, real estate, defence"
+  summary: "The wealthiest — rhythm, timing and material abundance."
+
+shatabhisha:
+  number: 24
+  name: "Shatabhisha"
+  span: "6°40′ – 20°00′ Kumbha"
+  start: 306.6667
+  lord: "Rahu"
+  deity: "Varuna"
+  symbol: "Empty circle, hundred stars"
+  rashi: "kumbha"
+  gana: "Rakshasa"
+  yoni: "Horse (female)"
+  nadi: "Adi"
+  varna: "Butcher"
+  guna: "Tamas"
+  direction: "South"
+  keywords: ["healing", "secrecy", "isolation", "systems"]
+  careers: "Medicine and epidemiology, astrology, engineering, research labs, security"
+  summary: "The hundred healers — hidden remedies and solitary mastery."
+
+purva-bhadrapada:
+  number: 25
+  name: "Purva Bhadrapada"
+  span: "20°00′ Kumbha – 3°20′ Meena"
+  start: 320.0
+  lord: "Guru (Jupiter)"
+  deity: "Aja Ekapada"
+  symbol: "Front legs of a funeral cot, two-faced man"
+  rashi: "kumbha"
+  gana: "Manushya"
+  yoni: "Lion (male)"
+  nadi: "Adi"
+  varna: "Brahmin"
+  guna: "Sattva"
+  direction: "West"
+  keywords: ["austerity", "intensity", "duality", "vision"]
+  careers: "Occult study, statistics, ascetic practice, crematorium and funeral services, academia"
+  summary: "The former auspicious feet — fierce austerity and visionary extremes."
+
+uttara-bhadrapada:
+  number: 26
+  name: "Uttara Bhadrapada"
+  span: "3°20′ – 16°40′ Meena"
+  start: 333.3333
+  lord: "Shani (Saturn)"
+  deity: "Ahir Budhnya"
+  symbol: "Back legs of a funeral cot, serpent of the deep"
+  rashi: "meena"
+  gana: "Manushya"
+  yoni: "Cow (female)"
+  nadi: "Madhya"
+  varna: "Kshatriya"
+  guna: "Tamas"
+  direction: "North"
+  keywords: ["depth", "patience", "wisdom", "stillness"]
+  careers: "Counselling, deep research, charity administration, writing, contemplative work"
+  summary: "The latter auspicious feet — deep, still and quietly wise."
+
+revati:
+  number: 27
+  name: "Revati"
+  span: "16°40′ – 30°00′ Meena"
+  start: 346.6667
+  lord: "Budha (Mercury)"
+  deity: "Pushan"
+  symbol: "Fish, drum"
+  rashi: "meena"
+  gana: "Deva"
+  yoni: "Elephant (female)"
+  nadi: "Antya"
+  varna: "Shudra"
+  guna: "Sattva"
+  direction: "East"
+  keywords: ["safe passage", "completion", "kindness", "endings"]
+  careers: "Travel and logistics, animal care, childcare, music, spiritual guidance"
+  summary: "The wealthy — final nakshatra, protector of journeys and endings."

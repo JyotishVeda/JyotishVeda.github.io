@@ -1,0 +1,30 @@
+{{ define "main" }}
+<article class="page wide">
+  {{ partial "crumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  <p class="lede">{{ .Description }}</p>
+  {{ .Content }}
+
+  <h2>All 27 nakshatras</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>#</th><th>Nakshatra</th><th>Span</th><th>Lord</th><th>Deity</th><th>Gana</th><th>Yoni</th><th>Nadi</th></tr></thead>
+      <tbody>
+        {{ range $key, $n := site.Data.nakshatras }}
+        <tr>
+          <td>{{ $n.number }}</td>
+          <td><a href="{{ printf "nakshatra/%s/" $key | relURL }}">{{ $n.name }}</a></td>
+          <td class="mono small">{{ $n.span }}</td>
+          <td>{{ $n.lord }}</td>
+          <td>{{ $n.deity }}</td>
+          <td>{{ $n.gana }}</td>
+          <td>{{ $n.yoni }}</td>
+          <td>{{ $n.nadi }}</td>
+        </tr>
+        {{ end }}
+      </tbody>
+    </table>
+  </div>
+  {{ partial "ad-slot.html" (dict "Site" .Site "slot" "2222222222") }}
+</article>
+{{ end }}

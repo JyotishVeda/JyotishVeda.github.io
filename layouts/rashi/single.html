@@ -1,0 +1,77 @@
+{{ define "main" }}
+{{ $r := index site.Data.rashi .Params.key }}
+<article class="page">
+  {{ partial "crumbs.html" . }}
+  <p class="eyebrow">RASHI {{ add $r.index 1 }} OF 12 · {{ $r.span }}</p>
+  <h1>{{ $r.symbol }} {{ $r.name }} ({{ $r.english }})</h1>
+  <p class="lede">{{ .Description }}</p>
+
+  <div class="factbar">
+    <div class="fact"><span>Lord</span><strong>{{ $r.lord }}</strong></div>
+    <div class="fact"><span>Tattva</span><strong>{{ $r.tattva }}</strong></div>
+    <div class="fact"><span>Swabhava</span><strong>{{ $r.swabhava }}</strong></div>
+    <div class="fact"><span>Varna</span><strong>{{ $r.varna }}</strong></div>
+    <div class="fact"><span>Sidereal span</span><strong>{{ $r.span }}</strong></div>
+  </div>
+
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Attribute</th><th>Traditional association</th></tr></thead>
+    <tbody>
+      <tr><td>Sanskrit name</td><td>{{ $r.name }}</td></tr>
+      <tr><td>Emblem</td><td>{{ $r.emblem }}</td></tr>
+      <tr><td>Ruling graha</td><td>{{ $r.lord }}</td></tr>
+      <tr><td>Tattva (element)</td><td>{{ $r.tattva }}</td></tr>
+      <tr><td>Swabhava (mode)</td><td>{{ $r.swabhava }}</td></tr>
+      <tr><td>Gender</td><td>{{ $r.gender }}</td></tr>
+      <tr><td>Varna</td><td>{{ $r.varna }}</td></tr>
+      <tr><td>Direction</td><td>{{ $r.direction }}</td></tr>
+      <tr><td>Kalapurusha body part</td><td>{{ $r.body_part }}</td></tr>
+      <tr><td>Nakshatras covered</td><td>{{ $r.nakshatras }}</td></tr>
+      <tr><td>Weekday</td><td>{{ $r.lucky_day }}</td></tr>
+      <tr><td>Colour</td><td>{{ $r.lucky_colour }}</td></tr>
+      <tr><td>Number</td><td>{{ $r.lucky_number }}</td></tr>
+      <tr><td>Stone</td><td>{{ $r.gem }}</td></tr>
+      <tr><td>Beeja mantra</td><td>{{ $r.mantra }}</td></tr>
+      <tr><td>Presiding deity</td><td>{{ $r.deity }}</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  {{ .Content }}
+
+  <h2>Keyword themes</h2>
+  <div class="pill-row">{{ range $r.traits }}<span class="pill">{{ . }}</span>{{ end }}</div>
+
+  <h2>Commonly compatible rashis</h2>
+  <div class="grid">
+    {{ range $r.friendly }}
+    {{ $f := index site.Data.rashi . }}
+    <a class="tile" href="{{ printf "rashi/%s/" . | relURL }}">
+      <span class="tile-glyph">{{ $f.symbol }}</span>
+      <span class="tile-body"><strong>{{ $f.name }}</strong><small>{{ $f.tattva }} · {{ $f.lord }}</small></span>
+    </a>
+    {{ end }}
+  </div>
+  <p class="small muted">Rashi-to-rashi comparison is only the Bhakoot koota — one of eight in the Ashtakoota system, worth 7 of 36 points. Use <a href="{{ "tools/kundali-milan/" | relURL }}">Kundali Milan</a> for the full calculation.</p>
+
+  {{ partial "ad-slot.html" (dict "Site" .Site "slot" "4444444444") }}
+
+  <h2>Work with your own chart</h2>
+  <div class="next-links">
+    <a href="{{ "tools/moon-rashi-calculator/" | relURL }}"><span>CALCULATE</span>Find your true janma rashi</a>
+    <a href="{{ printf "rashifal/%s/" .Params.key | relURL }}"><span>TODAY</span>{{ $r.name }} rashifal</a>
+    <a href="{{ "tools/kundali-chart/" | relURL }}"><span>CHART</span>Full kundali with bhavas and dasha</a>
+    <a href="{{ "nakshatra/" | relURL }}"><span>DEEPER</span>The 27 nakshatras</a>
+  </div>
+
+  <div class="note">
+    <strong>Reading note.</strong> A rashi page describes one factor. A real reading weighs the lagna, the position and strength of the rashi lord, the bhava the rashi falls in, aspects onto it and the running dasha. Two people born under the same janma rashi can have very different charts.
+  </div>
+
+  <div class="prev-next">
+    <span>{{ with .PrevInSection }}<a href="{{ .RelPermalink }}">← {{ .Title }}</a>{{ end }}</span>
+    <span>{{ with .NextInSection }}<a href="{{ .RelPermalink }}">{{ .Title }} →</a>{{ end }}</span>
+  </div>
+</article>
+{{ end }}

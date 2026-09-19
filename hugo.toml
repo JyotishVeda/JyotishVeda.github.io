@@ -1,0 +1,61 @@
+baseURL = "https://jyotishveda.github.io/"
+languageCode = "en-in"
+title = "JyotishVeda"
+enableRobotsTXT = true
+
+[params]
+  description = "Vedic astrology (Jyotish) explained with real calculations — rashis, nakshatras, grahas, bhavas, panchang, dashas, kundali matching and free Jyotish tools."
+  tagline = "Jyotish, calculated openly."
+  adsenseClientId = ""
+  ayanamsha = "Lahiri (Chitrapaksha)"
+
+[menu]
+  [[menu.main]]
+    name = "Rashi"
+    url = "/rashi/"
+    weight = 1
+  [[menu.main]]
+    name = "Nakshatra"
+    url = "/nakshatra/"
+    weight = 2
+  [[menu.main]]
+    name = "Graha"
+    url = "/graha/"
+    weight = 3
+  [[menu.main]]
+    name = "Bhava"
+    url = "/bhava/"
+    weight = 4
+  [[menu.main]]
+    name = "Kundali"
+    url = "/kundali/"
+    weight = 5
+  [[menu.main]]
+    name = "Rashifal"
+    url = "/rashifal/"
+    weight = 6
+  [[menu.main]]
+    name = "Panchang"
+    url = "/panchang/"
+    weight = 7
+  [[menu.main]]
+    name = "Tools"
+    url = "/tools/"
+    weight = 8
+  [[menu.main]]
+    name = "Learn"
+    url = "/learn/"
+    weight = 9
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.tableOfContents]
+  startLevel = 2
+  endLevel = 3
+
+[taxonomies]
+

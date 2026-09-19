@@ -1,0 +1,33 @@
+{{ define "main" }}
+<article class="page wide">
+  {{ partial "crumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  <p class="lede">{{ .Description }}</p>
+  {{ .Content }}
+  <div class="grid">
+    {{ range $key, $g := site.Data.grahas }}
+    <a href="{{ printf "graha/%s/" $key | relURL }}" class="tile reveal">
+      <span class="tile-glyph">{{ $g.symbol }}</span>
+      <span class="tile-body"><strong>{{ $g.name }}</strong><small>{{ $g.english }} · {{ $g.dasha_years }}y dasha</small></span>
+    </a>
+    {{ end }}
+  </div>
+
+  <h2>Dignity at a glance</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Graha</th><th>Own</th><th>Exalted</th><th>Debilitated</th><th>Friends</th><th>Enemies</th><th>Dasha</th></tr></thead>
+      <tbody>
+        {{ range $key, $g := site.Data.grahas }}
+        <tr>
+          <td><a href="{{ printf "graha/%s/" $key | relURL }}">{{ $g.name }}</a></td>
+          <td>{{ $g.own }}</td><td>{{ $g.exalted }}</td><td>{{ $g.debilitated }}</td>
+          <td class="small">{{ $g.friends }}</td><td class="small">{{ $g.enemies }}</td><td>{{ $g.dasha_years }}y</td>
+        </tr>
+        {{ end }}
+      </tbody>
+    </table>
+  </div>
+  {{ partial "ad-slot.html" (dict "Site" .Site "slot" "2222222222") }}
+</article>
+{{ end }}

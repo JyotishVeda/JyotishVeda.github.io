@@ -1,0 +1,27 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <strong style="font-family:Georgia,serif;font-size:1.1rem;">ॐ {{ .Site.Title }}</strong>
+      <p>Jyotish explained the way it is actually computed — sidereal longitudes, {{ .Site.Params.ayanamsha }} ayanamsha, nakshatra padas, Vimshottari dasha and the five limbs of the panchang. Traditional interpretation is kept clearly separate from the arithmetic.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="{{ "rashi/" | relURL }}">12 Rashis</a>
+      <a href="{{ "nakshatra/" | relURL }}">27 Nakshatras</a>
+      <a href="{{ "graha/" | relURL }}">9 Grahas</a>
+      <a href="{{ "bhava/" | relURL }}">12 Bhavas</a>
+      <a href="{{ "tools/" | relURL }}">Free Jyotish Tools</a>
+    </div>
+    <div class="footer-col">
+      <h4>Site</h4>
+      <a href="{{ "about/" | relURL }}">About</a>
+      <a href="{{ "contact/" | relURL }}">Contact</a>
+      <a href="{{ "privacy-policy/" | relURL }}">Privacy Policy</a>
+      <a href="{{ "disclaimer/" | relURL }}">Disclaimer</a>
+      <a href="{{ "terms/" | relURL }}">Terms of Use</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © {{ now.Format "2006" }} {{ .Site.Title }}. Jyotish content is published for education, cultural study and entertainment. It is not medical, legal, financial or psychological advice.
+  </div>
+</footer>

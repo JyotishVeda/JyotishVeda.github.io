@@ -1,0 +1,12 @@
+{{/* Usage: {{ partial "ad-slot.html" (dict "Site" .Site "slot" "1234567890") }} */}}
+{{ if .Site.Params.adsenseClientId }}
+<div class="ad-slot">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="{{ .Site.Params.adsenseClientId }}"
+       data-ad-slot="{{ .slot }}"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+{{ end }}

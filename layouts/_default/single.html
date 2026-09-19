@@ -1,0 +1,15 @@
+{{ define "main" }}
+<article class="page">
+  {{ partial "crumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+  {{ .Content }}
+  {{ partial "ad-slot.html" (dict "Site" .Site "slot" "1111111111") }}
+  {{ if or .PrevInSection .NextInSection }}
+  <div class="prev-next">
+    <span>{{ with .PrevInSection }}<a href="{{ .RelPermalink }}">← {{ .Title }}</a>{{ end }}</span>
+    <span>{{ with .NextInSection }}<a href="{{ .RelPermalink }}">{{ .Title }} →</a>{{ end }}</span>
+  </div>
+  {{ end }}
+</article>
+{{ end }}

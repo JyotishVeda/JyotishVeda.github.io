@@ -1,0 +1,311 @@
+mesha:
+  index: 0
+  name: "Mesha"
+  english: "Aries"
+  symbol: "♈"
+  emblem: "Ram"
+  span: "0° – 30°"
+  lord: "Mangal (Mars)"
+  lord_key: "mangal"
+  tattva: "Agni (Fire)"
+  swabhava: "Chara (Movable)"
+  gender: "Male"
+  varna: "Kshatriya"
+  direction: "East"
+  body_part: "Head and brain"
+  nakshatras: "Ashwini, Bharani, Krittika (pada 1)"
+  lucky_day: "Tuesday"
+  lucky_colour: "Red, scarlet"
+  lucky_number: 9
+  gem: "Red coral (Moonga)"
+  mantra: "Om Angarakaya Namah"
+  deity: "Kartikeya"
+  traits: ["Initiating", "Impatient", "Courageous", "Blunt", "Self-driven"]
+  friendly: ["simha", "dhanu", "mithuna", "kumbha"]
+  summary: "Fiery, movable sign of Mars — beginnings, courage and raw initiative."
+
+vrishabha:
+  index: 1
+  name: "Vrishabha"
+  english: "Taurus"
+  symbol: "♉"
+  emblem: "Bull"
+  span: "30° – 60°"
+  lord: "Shukra (Venus)"
+  lord_key: "shukra"
+  tattva: "Prithvi (Earth)"
+  swabhava: "Sthira (Fixed)"
+  gender: "Female"
+  varna: "Vaishya"
+  direction: "South"
+  body_part: "Face, neck and throat"
+  nakshatras: "Krittika (padas 2–4), Rohini, Mrigashira (padas 1–2)"
+  lucky_day: "Friday"
+  lucky_colour: "White, pastel blue"
+  lucky_number: 6
+  gem: "Diamond (Heera)"
+  mantra: "Om Shukraya Namah"
+  deity: "Lakshmi"
+  traits: ["Steady", "Sensual", "Possessive", "Patient", "Resource-minded"]
+  friendly: ["kanya", "makara", "karka", "meena"]
+  summary: "Fixed earth sign of Venus — accumulation, comfort and staying power."
+
+mithuna:
+  index: 2
+  name: "Mithuna"
+  english: "Gemini"
+  symbol: "♊"
+  emblem: "Couple with lute and mace"
+  span: "60° – 90°"
+  lord: "Budha (Mercury)"
+  lord_key: "budha"
+  tattva: "Vayu (Air)"
+  swabhava: "Dwisvabhava (Dual)"
+  gender: "Male"
+  varna: "Shudra"
+  direction: "West"
+  body_part: "Shoulders, arms and hands"
+  nakshatras: "Mrigashira (padas 3–4), Ardra, Punarvasu (padas 1–3)"
+  lucky_day: "Wednesday"
+  lucky_colour: "Green"
+  lucky_number: 5
+  gem: "Emerald (Panna)"
+  mantra: "Om Budhaya Namah"
+  deity: "Vishnu"
+  traits: ["Verbal", "Restless", "Quick-witted", "Adaptable", "Scattered"]
+  friendly: ["tula", "kumbha", "mesha", "simha"]
+  summary: "Dual air sign of Mercury — speech, exchange and mental agility."
+
+karka:
+  index: 3
+  name: "Karka"
+  english: "Cancer"
+  symbol: "♋"
+  emblem: "Crab"
+  span: "90° – 120°"
+  lord: "Chandra (Moon)"
+  lord_key: "chandra"
+  tattva: "Jala (Water)"
+  swabhava: "Chara (Movable)"
+  gender: "Female"
+  varna: "Brahmin"
+  direction: "North"
+  body_part: "Chest, lungs and stomach lining"
+  nakshatras: "Punarvasu (pada 4), Pushya, Ashlesha"
+  lucky_day: "Monday"
+  lucky_colour: "White, silver"
+  lucky_number: 2
+  gem: "Pearl (Moti)"
+  mantra: "Om Chandraya Namah"
+  deity: "Parvati"
+  traits: ["Nurturing", "Moody", "Protective", "Retentive", "Home-centred"]
+  friendly: ["vrishchika", "meena", "vrishabha", "kanya"]
+  summary: "Movable water sign of the Moon — memory, shelter and emotional tides."
+
+simha:
+  index: 4
+  name: "Simha"
+  english: "Leo"
+  symbol: "♌"
+  emblem: "Lion"
+  span: "120° – 150°"
+  lord: "Surya (Sun)"
+  lord_key: "surya"
+  tattva: "Agni (Fire)"
+  swabhava: "Sthira (Fixed)"
+  gender: "Male"
+  varna: "Kshatriya"
+  direction: "East"
+  body_part: "Heart and upper back"
+  nakshatras: "Magha, Purva Phalguni, Uttara Phalguni (pada 1)"
+  lucky_day: "Sunday"
+  lucky_colour: "Gold, deep orange"
+  lucky_number: 1
+  gem: "Ruby (Manik)"
+  mantra: "Om Suryaya Namah"
+  deity: "Shiva"
+  traits: ["Dignified", "Commanding", "Proud", "Generous", "Attention-seeking"]
+  friendly: ["mesha", "dhanu", "mithuna", "tula"]
+  summary: "Fixed fire sign of the Sun — authority, visibility and self-respect."
+
+kanya:
+  index: 5
+  name: "Kanya"
+  english: "Virgo"
+  symbol: "♍"
+  emblem: "Maiden holding grain in a boat"
+  span: "150° – 180°"
+  lord: "Budha (Mercury)"
+  lord_key: "budha"
+  tattva: "Prithvi (Earth)"
+  swabhava: "Dwisvabhava (Dual)"
+  gender: "Female"
+  varna: "Vaishya"
+  direction: "South"
+  body_part: "Abdomen and intestines"
+  nakshatras: "Uttara Phalguni (padas 2–4), Hasta, Chitra (padas 1–2)"
+  lucky_day: "Wednesday"
+  lucky_colour: "Green, earth tones"
+  lucky_number: 5
+  gem: "Emerald (Panna)"
+  mantra: "Om Budhaya Namah"
+  deity: "Vishnu"
+  traits: ["Analytical", "Exacting", "Service-minded", "Anxious", "Skilled"]
+  friendly: ["vrishabha", "makara", "karka", "vrishchika"]
+  summary: "Dual earth sign of Mercury — discrimination, craft and correction."
+
+tula:
+  index: 6
+  name: "Tula"
+  english: "Libra"
+  symbol: "♎"
+  emblem: "Balance scales"
+  span: "180° – 210°"
+  lord: "Shukra (Venus)"
+  lord_key: "shukra"
+  tattva: "Vayu (Air)"
+  swabhava: "Chara (Movable)"
+  gender: "Male"
+  varna: "Shudra"
+  direction: "West"
+  body_part: "Lower abdomen and kidneys"
+  nakshatras: "Chitra (padas 3–4), Swati, Vishakha (padas 1–3)"
+  lucky_day: "Friday"
+  lucky_colour: "Pastel blue, white"
+  lucky_number: 6
+  gem: "Diamond (Heera)"
+  mantra: "Om Shukraya Namah"
+  deity: "Lakshmi"
+  traits: ["Balancing", "Diplomatic", "Indecisive", "Trade-minded", "Refined"]
+  friendly: ["mithuna", "kumbha", "simha", "dhanu"]
+  summary: "Movable air sign of Venus — exchange, agreement and measured judgement."
+
+vrishchika:
+  index: 7
+  name: "Vrishchika"
+  english: "Scorpio"
+  symbol: "♏"
+  emblem: "Scorpion"
+  span: "210° – 240°"
+  lord: "Mangal (Mars)"
+  lord_key: "mangal"
+  tattva: "Jala (Water)"
+  swabhava: "Sthira (Fixed)"
+  gender: "Female"
+  varna: "Brahmin"
+  direction: "North"
+  body_part: "Pelvis and reproductive organs"
+  nakshatras: "Vishakha (pada 4), Anuradha, Jyeshtha"
+  lucky_day: "Tuesday"
+  lucky_colour: "Deep red, maroon"
+  lucky_number: 9
+  gem: "Red coral (Moonga)"
+  mantra: "Om Angarakaya Namah"
+  deity: "Kartikeya"
+  traits: ["Intense", "Secretive", "Researching", "Resilient", "Transformative"]
+  friendly: ["karka", "meena", "kanya", "makara"]
+  summary: "Fixed water sign of Mars — depth, secrecy and sudden change."
+
+dhanu:
+  index: 8
+  name: "Dhanu"
+  english: "Sagittarius"
+  symbol: "♐"
+  emblem: "Archer"
+  span: "240° – 270°"
+  lord: "Guru (Jupiter)"
+  lord_key: "guru"
+  tattva: "Agni (Fire)"
+  swabhava: "Dwisvabhava (Dual)"
+  gender: "Male"
+  varna: "Kshatriya"
+  direction: "East"
+  body_part: "Hips and thighs"
+  nakshatras: "Mula, Purva Ashadha, Uttara Ashadha (pada 1)"
+  lucky_day: "Thursday"
+  lucky_colour: "Yellow, saffron"
+  lucky_number: 3
+  gem: "Yellow sapphire (Pukhraj)"
+  mantra: "Om Gurave Namah"
+  deity: "Brihaspati"
+  traits: ["Principled", "Expansive", "Teaching", "Restless", "Optimistic"]
+  friendly: ["mesha", "simha", "tula", "kumbha"]
+  summary: "Dual fire sign of Jupiter — dharma, teaching and long-range aim."
+
+makara:
+  index: 9
+  name: "Makara"
+  english: "Capricorn"
+  symbol: "♑"
+  emblem: "Crocodile / sea-creature"
+  span: "270° – 300°"
+  lord: "Shani (Saturn)"
+  lord_key: "shani"
+  tattva: "Prithvi (Earth)"
+  swabhava: "Chara (Movable)"
+  gender: "Female"
+  varna: "Vaishya"
+  direction: "South"
+  body_part: "Knees and joints"
+  nakshatras: "Uttara Ashadha (padas 2–4), Shravana, Dhanishta (padas 1–2)"
+  lucky_day: "Saturday"
+  lucky_colour: "Dark blue, black"
+  lucky_number: 8
+  gem: "Blue sapphire (Neelam)"
+  mantra: "Om Shanaischaraya Namah"
+  deity: "Shani Dev"
+  traits: ["Disciplined", "Ambitious", "Reserved", "Durable", "Duty-bound"]
+  friendly: ["vrishabha", "kanya", "vrishchika", "meena"]
+  summary: "Movable earth sign of Saturn — structure, endurance and slow climb."
+
+kumbha:
+  index: 10
+  name: "Kumbha"
+  english: "Aquarius"
+  symbol: "♒"
+  emblem: "Man carrying a water pot"
+  span: "300° – 330°"
+  lord: "Shani (Saturn)"
+  lord_key: "shani"
+  tattva: "Vayu (Air)"
+  swabhava: "Sthira (Fixed)"
+  gender: "Male"
+  varna: "Shudra"
+  direction: "West"
+  body_part: "Calves and ankles"
+  nakshatras: "Dhanishta (padas 3–4), Shatabhisha, Purva Bhadrapada (padas 1–3)"
+  lucky_day: "Saturday"
+  lucky_colour: "Indigo, grey"
+  lucky_number: 8
+  gem: "Blue sapphire (Neelam)"
+  mantra: "Om Shanaischaraya Namah"
+  deity: "Shani Dev"
+  traits: ["Detached", "Systemic", "Unconventional", "Networked", "Stubborn"]
+  friendly: ["mithuna", "tula", "dhanu", "mesha"]
+  summary: "Fixed air sign of Saturn — systems, community and impersonal vision."
+
+meena:
+  index: 11
+  name: "Meena"
+  english: "Pisces"
+  symbol: "♓"
+  emblem: "Two fish"
+  span: "330° – 360°"
+  lord: "Guru (Jupiter)"
+  lord_key: "guru"
+  tattva: "Jala (Water)"
+  swabhava: "Dwisvabhava (Dual)"
+  gender: "Female"
+  varna: "Brahmin"
+  direction: "North"
+  body_part: "Feet"
+  nakshatras: "Purva Bhadrapada (pada 4), Uttara Bhadrapada, Revati"
+  lucky_day: "Thursday"
+  lucky_colour: "Yellow, sea-green"
+  lucky_number: 3
+  gem: "Yellow sapphire (Pukhraj)"
+  mantra: "Om Gurave Namah"
+  deity: "Brihaspati"
+  traits: ["Compassionate", "Imaginative", "Escapist", "Devotional", "Boundary-less"]
+  friendly: ["karka", "vrishchika", "vrishabha", "makara"]
+  summary: "Dual water sign of Jupiter — dissolution, devotion and imagination."

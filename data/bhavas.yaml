@@ -1,0 +1,143 @@
+bhava-1:
+  number: 1
+  name: "Tanu Bhava"
+  english: "House of the Body"
+  classification: "Kendra + Trikona (Lagna)"
+  karaka: "Surya"
+  purushartha: "Dharma"
+  body: "Head, complexion, overall constitution"
+  themes: "Physical body, appearance, temperament, vitality, early life, the self as it is seen"
+  strong_when: "Its lord is strong, in a kendra or trikona, and the lagna is not afflicted by malefics"
+  summary: "The rising sign — body, personality and the frame of the whole chart."
+
+bhava-2:
+  number: 2
+  name: "Dhana Bhava"
+  english: "House of Wealth"
+  classification: "Maraka, Panapara"
+  karaka: "Guru"
+  purushartha: "Artha"
+  body: "Face, right eye, mouth, teeth, throat"
+  themes: "Accumulated money, family of origin, speech, food, values, movable assets"
+  strong_when: "Guru or the 2nd lord is well placed and free from combustion"
+  summary: "Accumulated wealth, family, speech and what you value."
+
+bhava-3:
+  number: 3
+  name: "Sahaja Bhava"
+  english: "House of Siblings"
+  classification: "Upachaya, Apoklima"
+  karaka: "Mangal"
+  purushartha: "Kama"
+  body: "Arms, shoulders, right ear, respiratory tract"
+  themes: "Younger siblings, courage, short travel, hands-on skill, communication, effort"
+  strong_when: "Mangal is strong; malefics here are traditionally considered useful"
+  summary: "Courage, siblings, effort and self-made skill."
+
+bhava-4:
+  number: 4
+  name: "Sukha Bhava"
+  english: "House of Happiness"
+  classification: "Kendra"
+  karaka: "Chandra"
+  purushartha: "Moksha"
+  body: "Chest, lungs, heart region"
+  themes: "Mother, home, land and property, vehicles, schooling, inner contentment"
+  strong_when: "Chandra and the 4th lord are strong and unafflicted"
+  summary: "Mother, home, land and the inner sense of security."
+
+bhava-5:
+  number: 5
+  name: "Putra Bhava"
+  english: "House of Children"
+  classification: "Trikona"
+  karaka: "Guru"
+  purushartha: "Dharma"
+  body: "Upper abdomen, stomach, liver"
+  themes: "Children, intelligence, mantra and purva-punya, creativity, speculation, romance"
+  strong_when: "Guru is strong and the 5th lord sits in a kendra or trikona"
+  summary: "Intelligence, children, creativity and inherited merit."
+
+bhava-6:
+  number: 6
+  name: "Ripu Bhava"
+  english: "House of Enemies"
+  classification: "Dusthana, Upachaya"
+  karaka: "Mangal and Shani"
+  purushartha: "Artha"
+  body: "Intestines, kidneys, digestive disorders"
+  themes: "Illness, debt, enemies, litigation, daily work, service, competition, pets"
+  strong_when: "Malefics here are traditionally said to help defeat opposition"
+  summary: "Disease, debt, competition and the discipline of daily work."
+
+bhava-7:
+  number: 7
+  name: "Yuvati Bhava"
+  english: "House of Partnership"
+  classification: "Kendra, Maraka"
+  karaka: "Shukra"
+  purushartha: "Kama"
+  body: "Pelvis, lower back, reproductive organs"
+  themes: "Marriage, business partners, contracts, open opponents, foreign residence"
+  strong_when: "Shukra is strong and the 7th house is free from malefic occupation"
+  summary: "Marriage, partnership, contracts and the other person."
+
+bhava-8:
+  number: 8
+  name: "Randhra Bhava"
+  english: "House of the Hidden"
+  classification: "Dusthana"
+  karaka: "Shani"
+  purushartha: "Moksha"
+  body: "Reproductive and excretory organs, chronic conditions"
+  themes: "Longevity, inheritance, joint finances, research, crisis, occult, sudden events"
+  strong_when: "Its lord is not weak and Shani supports the chart's longevity indicators"
+  summary: "Longevity, inheritance, crisis and everything hidden."
+
+bhava-9:
+  number: 9
+  name: "Dharma Bhava"
+  english: "House of Fortune"
+  classification: "Trikona"
+  karaka: "Guru and Surya"
+  purushartha: "Dharma"
+  body: "Hips, thighs, arterial system"
+  themes: "Father, guru, luck, higher study, pilgrimage, long journeys, ethics, belief"
+  strong_when: "Guru aspects or occupies it and the 9th lord is in a kendra or trikona"
+  summary: "Fortune, father, guru, belief and higher learning."
+
+bhava-10:
+  number: 10
+  name: "Karma Bhava"
+  english: "House of Action"
+  classification: "Kendra, Upachaya"
+  karaka: "Surya, Budha, Guru, Shani"
+  purushartha: "Artha"
+  body: "Knees, joints, spine"
+  themes: "Profession, status, public role, government, authority, visible achievement"
+  strong_when: "Its lord is strong and the four karakas of karma are well placed"
+  summary: "Career, status and your visible action in the world."
+
+bhava-11:
+  number: 11
+  name: "Labha Bhava"
+  english: "House of Gains"
+  classification: "Upachaya, Panapara"
+  karaka: "Guru"
+  purushartha: "Kama"
+  body: "Calves, ankles, left ear"
+  themes: "Income, gains, elder siblings, friends and networks, fulfilment of desire"
+  strong_when: "Any planet here tends to give gains; malefics are not considered harmful"
+  summary: "Income, networks, elder siblings and fulfilled desires."
+
+bhava-12:
+  number: 12
+  name: "Vyaya Bhava"
+  english: "House of Loss"
+  classification: "Dusthana, Moksha-sthana"
+  karaka: "Shani and Ketu"
+  purushartha: "Moksha"
+  body: "Feet, left eye, sleep and the subtle body"
+  themes: "Expenditure, foreign lands, isolation, hospitals, sleep, liberation, private life"
+  strong_when: "Benefics here support spiritual life even while material expense increases"
+  summary: "Expense, foreign residence, sleep, seclusion and liberation."

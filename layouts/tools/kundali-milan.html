@@ -1,0 +1,48 @@
+{{ define "main" }}
+<article class="page wide">
+  {{ partial "crumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  <p class="lede">{{ .Description }}</p>
+
+  <div class="tool-panel" id="milan-tool">
+    <div class="grid grid-2">
+      <div>
+        <p class="eyebrow">BOY / VAR</p>
+        <div data-birth="boy">
+          {{ partial "birth-form.html" (dict "who" "boy" "showTime" true) }}
+          <div class="btn-row"><button class="btn btn-ghost" type="button" data-derive="boy">Calculate from birth details</button></div>
+          <p class="field-note" data-derived></p>
+        </div>
+        <div class="form-grid" style="margin-top:.6rem">
+          <div><label>Janma Rashi</label><select data-rashi-select data-who="boy"></select></div>
+          <div><label>Janma Nakshatra</label><select data-nakshatra-select data-who="boy"></select></div>
+        </div>
+      </div>
+      <div>
+        <p class="eyebrow">GIRL / VADHU</p>
+        <div data-birth="girl">
+          {{ partial "birth-form.html" (dict "who" "girl" "showTime" true) }}
+          <div class="btn-row"><button class="btn btn-ghost" type="button" data-derive="girl">Calculate from birth details</button></div>
+          <p class="field-note" data-derived></p>
+        </div>
+        <div class="form-grid" style="margin-top:.6rem">
+          <div><label>Janma Rashi</label><select data-rashi-select data-who="girl"></select></div>
+          <div><label>Janma Nakshatra</label><select data-nakshatra-select data-who="girl"></select></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="btn-row"><button class="btn" type="button" data-run>Calculate Guna Milan</button></div>
+    <div class="error-msg" data-error hidden></div>
+    <div class="result-panel" data-result hidden></div>
+  </div>
+
+  {{ .Content }}
+  {{ partial "ad-slot.html" (dict "Site" .Site "slot" "8888888888") }}
+
+  <script type="module">
+    import { initMilanTool } from "{{ "js/tools/milan-tool.js" | relURL }}";
+    initMilanTool();
+  </script>
+</article>
+{{ end }}

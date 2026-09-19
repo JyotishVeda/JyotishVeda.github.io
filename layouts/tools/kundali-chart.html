@@ -1,0 +1,40 @@
+{{ define "main" }}
+<article class="page wide">
+  {{ partial "crumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  <p class="lede">{{ .Description }}</p>
+
+  <div class="tool-panel" id="kundali-tool">
+    <p class="eyebrow">BIRTH DETAILS</p>
+    {{ partial "birth-form.html" (dict "showTime" true) }}
+    <p class="field-note">Birth time matters: the lagna moves roughly one degree every four minutes. Everything is computed in your browser and nothing is sent anywhere.</p>
+    <div class="btn-row">
+      <button class="btn" type="button" data-run>Generate kundali</button>
+      <button class="btn btn-ghost pill is-active" type="button" data-style="north">North Indian</button>
+      <button class="btn btn-ghost pill" type="button" data-style="south">South Indian</button>
+    </div>
+    <div class="error-msg" data-error hidden></div>
+
+    <div class="result-panel" data-result hidden>
+      <div class="chart-wrap" style="margin-top:1.4rem">
+        <div data-chart></div>
+        <div data-summary></div>
+      </div>
+      <h2>Graha positions</h2>
+      <div data-grahas></div>
+      <h2>Bhavas (whole sign)</h2>
+      <div data-houses></div>
+      <h2>Vimshottari mahadasha</h2>
+      <div data-dasha></div>
+    </div>
+  </div>
+
+  {{ .Content }}
+  {{ partial "ad-slot.html" (dict "Site" .Site "slot" "8888888888") }}
+
+  <script type="module">
+    import { initKundaliTool } from "{{ "js/tools/kundali-tool.js" | relURL }}";
+    initKundaliTool();
+  </script>
+</article>
+{{ end }}

@@ -1,0 +1,19 @@
+{{ define "main" }}
+<article class="page wide">
+  {{ partial "crumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  <p class="lede">{{ .Description }}</p>
+  <div class="tool-panel" id="dasha-tool">
+    {{ partial "birth-form.html" (dict "showTime" true) }}
+    <div class="btn-row"><button class="btn" type="button" data-run>Calculate dasha periods</button></div>
+    <div class="error-msg" data-error hidden></div>
+    <div class="result-panel" data-result hidden><div data-result-body></div></div>
+  </div>
+  {{ .Content }}
+  {{ partial "ad-slot.html" (dict "Site" .Site "slot" "8888888888") }}
+  <script type="module">
+    import { initDashaTool } from "{{ "js/tools/dasha-tool.js" | relURL }}";
+    initDashaTool();
+  </script>
+</article>
+{{ end }}

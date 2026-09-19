@@ -1,0 +1,59 @@
+{{ define "main" }}
+{{ $g := index site.Data.grahas .Params.key }}
+<article class="page">
+  {{ partial "crumbs.html" . }}
+  <p class="eyebrow">GRAHA {{ $g.order }} OF 9</p>
+  <h1>{{ $g.symbol }} {{ $g.name }} ({{ $g.english }})</h1>
+  <p class="lede">{{ .Description }}</p>
+
+  <div class="factbar">
+    <div class="fact"><span>Own rashi</span><strong>{{ $g.own }}</strong></div>
+    <div class="fact"><span>Exalted</span><strong>{{ $g.exalted }}</strong></div>
+    <div class="fact"><span>Debilitated</span><strong>{{ $g.debilitated }}</strong></div>
+    <div class="fact"><span>Dasha years</span><strong>{{ $g.dasha_years }}</strong></div>
+  </div>
+
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Attribute</th><th>Classical position</th></tr></thead>
+    <tbody>
+      <tr><td>Karakatva (significations)</td><td>{{ $g.karaka }}</td></tr>
+      <tr><td>Own sign(s)</td><td>{{ $g.own }}</td></tr>
+      <tr><td>Moolatrikona</td><td>{{ $g.moolatrikona }}</td></tr>
+      <tr><td>Exaltation</td><td>{{ $g.exalted }}</td></tr>
+      <tr><td>Debilitation</td><td>{{ $g.debilitated }}</td></tr>
+      <tr><td>Natural friends</td><td>{{ $g.friends }}</td></tr>
+      <tr><td>Natural enemies</td><td>{{ $g.enemies }}</td></tr>
+      <tr><td>Neutral</td><td>{{ $g.neutral }}</td></tr>
+      <tr><td>Special aspects (drishti)</td><td>{{ $g.aspects }}</td></tr>
+      <tr><td>Nature</td><td>{{ $g.nature }}</td></tr>
+      <tr><td>Vimshottari period</td><td>{{ $g.dasha_years }} years</td></tr>
+      <tr><td>Nakshatras ruled</td><td>{{ $g.nakshatras }}</td></tr>
+      <tr><td>Weekday</td><td>{{ $g.day }}</td></tr>
+      <tr><td>Direction</td><td>{{ $g.direction }}</td></tr>
+      <tr><td>Gemstone</td><td>{{ $g.gem }}</td></tr>
+      <tr><td>Metal</td><td>{{ $g.metal }}</td></tr>
+      <tr><td>Deity</td><td>{{ $g.deity }}</td></tr>
+      <tr><td>Beeja mantra</td><td>{{ $g.mantra }}</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  {{ .Content }}
+
+  {{ partial "ad-slot.html" (dict "Site" .Site "slot" "6666666666") }}
+
+  <h2>See {{ $g.name }} in a real chart</h2>
+  <div class="next-links">
+    <a href="{{ "tools/kundali-chart/" | relURL }}"><span>CHART</span>Where is {{ $g.name }} in your kundali?</a>
+    <a href="{{ "tools/vimshottari-dasha/" | relURL }}"><span>TIMING</span>The {{ $g.dasha_years }}-year {{ $g.name }} dasha</a>
+    <a href="{{ "panchang/" | relURL }}"><span>TODAY</span>Current transit position</a>
+    <a href="{{ "bhava/" | relURL }}"><span>CONTEXT</span>The twelve bhavas</a>
+  </div>
+
+  <div class="prev-next">
+    <span>{{ with .PrevInSection }}<a href="{{ .RelPermalink }}">← {{ .Title }}</a>{{ end }}</span>
+    <span>{{ with .NextInSection }}<a href="{{ .RelPermalink }}">{{ .Title }} →</a>{{ end }}</span>
+  </div>
+</article>
+{{ end }}

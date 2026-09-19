@@ -1,0 +1,20 @@
+{{ define "main" }}
+<article class="page wide">
+  {{ partial "crumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  <p class="lede">{{ .Description }}</p>
+  {{ .Content }}
+  <div class="grid grid-4">
+    {{ range .Pages }}
+    <a class="feature-card reveal" href="{{ .RelPermalink }}">
+      <span class="feature-kicker">{{ .Params.kicker | default "TOOL" }}</span>
+      <span class="feature-icon">{{ .Params.icon | default "✦" }}</span>
+      <h3>{{ .Title }}</h3>
+      <p>{{ .Description }}</p>
+      <span class="feature-arrow">Open →</span>
+    </a>
+    {{ end }}
+  </div>
+  {{ partial "ad-slot.html" (dict "Site" .Site "slot" "2222222222") }}
+</article>
+{{ end }}

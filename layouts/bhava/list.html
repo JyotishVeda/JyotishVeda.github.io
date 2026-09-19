@@ -1,0 +1,26 @@
+{{ define "main" }}
+<article class="page wide">
+  {{ partial "crumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  <p class="lede">{{ .Description }}</p>
+  {{ .Content }}
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>#</th><th>Bhava</th><th>Classification</th><th>Karaka</th><th>Purushartha</th><th>Themes</th></tr></thead>
+      <tbody>
+        {{ range $key, $b := site.Data.bhavas }}
+        <tr>
+          <td>{{ $b.number }}</td>
+          <td><a href="{{ printf "bhava/%s/" $key | relURL }}">{{ $b.name }}</a></td>
+          <td>{{ $b.classification }}</td>
+          <td>{{ $b.karaka }}</td>
+          <td>{{ $b.purushartha }}</td>
+          <td class="small">{{ $b.themes }}</td>
+        </tr>
+        {{ end }}
+      </tbody>
+    </table>
+  </div>
+  {{ partial "ad-slot.html" (dict "Site" .Site "slot" "2222222222") }}
+</article>
+{{ end }}

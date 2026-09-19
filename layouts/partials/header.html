@@ -1,0 +1,23 @@
+<header class="site-header">
+  <a href="{{ site.Home.RelPermalink }}" class="logo"><span class="logo-mark">ॐ</span>{{ .Site.Title }}</a>
+  <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+  <nav class="site-nav" aria-label="Main navigation">
+    <ul>
+      {{ range .Site.Menus.main }}
+      <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
+  </nav>
+</header>
+<script>
+(() => {
+  const button = document.querySelector(".nav-toggle");
+  const nav = document.querySelector(".site-nav");
+  if (!button || !nav) return;
+  button.addEventListener("click", () => {
+    const open = nav.classList.toggle("is-open");
+    button.setAttribute("aria-expanded", String(open));
+    button.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
+  });
+})();
+</script>

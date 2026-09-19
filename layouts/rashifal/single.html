@@ -1,0 +1,34 @@
+{{ define "main" }}
+{{ $r := index site.Data.rashi .Params.key }}
+<article class="page wide">
+  {{ partial "crumbs.html" . }}
+  <h1>{{ $r.symbol }} {{ .Title }}</h1>
+  <p class="lede">{{ .Description }}</p>
+
+  <div class="tool-panel" id="rashifal" data-rashi="{{ .Params.key }}">
+    <div class="btn-row">
+      <button class="btn pill is-active" type="button" data-mode="daily">Today</button>
+      <button class="btn btn-ghost pill" type="button" data-mode="weekly">This week</button>
+    </div>
+    <div data-body></div>
+  </div>
+
+  {{ .Content }}
+  {{ partial "ad-slot.html" (dict "Site" .Site "slot" "9999999999") }}
+
+  <h2>All rashis</h2>
+  <div class="grid">
+    {{ range $key, $x := site.Data.rashi }}
+    <a href="{{ printf "rashifal/%s/" $key | relURL }}" class="tile">
+      <span class="tile-glyph">{{ $x.symbol }}</span>
+      <span class="tile-body"><strong>{{ $x.name }}</strong><small>{{ $x.english }}</small></span>
+    </a>
+    {{ end }}
+  </div>
+
+  <script type="module">
+    import { initRashifal } from "{{ "js/tools/rashifal-page.js" | relURL }}";
+    initRashifal("#rashifal", "{{ .Params.key }}");
+  </script>
+</article>
+{{ end }}

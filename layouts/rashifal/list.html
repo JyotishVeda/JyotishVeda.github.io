@@ -1,0 +1,24 @@
+{{ define "main" }}
+<article class="page wide">
+  {{ partial "crumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  <p class="lede">{{ .Description }}</p>
+  {{ .Content }}
+
+  <div class="tool-panel" id="rashifal">
+    <div class="pill-row" data-pills></div>
+    <div class="btn-row">
+      <button class="btn pill is-active" type="button" data-mode="daily">Today</button>
+      <button class="btn btn-ghost pill" type="button" data-mode="weekly">This week</button>
+    </div>
+    <div data-body></div>
+  </div>
+
+  {{ partial "ad-slot.html" (dict "Site" .Site "slot" "9999999999") }}
+
+  <script type="module">
+    import { initRashifal } from "{{ "js/tools/rashifal-page.js" | relURL }}";
+    initRashifal("#rashifal");
+  </script>
+</article>
+{{ end }}

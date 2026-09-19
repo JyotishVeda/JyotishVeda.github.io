@@ -1,0 +1,27 @@
+{{ define "main" }}
+<article class="page wide">
+  {{ partial "crumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  <p class="lede">{{ .Description }}</p>
+
+  <div class="tool-panel" id="panchang-tool">
+    <div class="form-grid">
+      <div><label>Date</label><input type="date" data-date></div>
+      <div><label>Place</label><select data-place></select></div>
+    </div>
+    <div class="btn-row"><button class="btn" type="button" data-run>Show panchang</button></div>
+    <div class="error-msg" data-error hidden></div>
+    <div data-panchang style="margin-top:1.4rem"></div>
+    <h2>Graha transits on this date</h2>
+    <div data-transits></div>
+  </div>
+
+  {{ .Content }}
+  {{ partial "ad-slot.html" (dict "Site" .Site "slot" "8888888888") }}
+
+  <script type="module">
+    import { initPanchangTool } from "{{ "js/tools/panchang-tool.js" | relURL }}";
+    initPanchangTool();
+  </script>
+</article>
+{{ end }}

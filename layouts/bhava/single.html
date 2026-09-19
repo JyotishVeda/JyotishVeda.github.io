@@ -1,0 +1,48 @@
+{{ define "main" }}
+{{ $b := index site.Data.bhavas .Params.key }}
+<article class="page">
+  {{ partial "crumbs.html" . }}
+  <p class="eyebrow">BHAVA {{ $b.number }} OF 12</p>
+  <h1>{{ $b.number }}{{ cond (eq $b.number 1) "st" (cond (eq $b.number 2) "nd" (cond (eq $b.number 3) "rd" "th")) }} House — {{ $b.name }}</h1>
+  <p class="lede">{{ .Description }}</p>
+
+  <div class="factbar">
+    <div class="fact"><span>Sanskrit</span><strong>{{ $b.name }}</strong></div>
+    <div class="fact"><span>Classification</span><strong>{{ $b.classification }}</strong></div>
+    <div class="fact"><span>Karaka</span><strong>{{ $b.karaka }}</strong></div>
+    <div class="fact"><span>Purushartha</span><strong>{{ $b.purushartha }}</strong></div>
+  </div>
+
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Attribute</th><th>Classical position</th></tr></thead>
+    <tbody>
+      <tr><td>Sanskrit name</td><td>{{ $b.name }}</td></tr>
+      <tr><td>Common English name</td><td>{{ $b.english }}</td></tr>
+      <tr><td>Classification</td><td>{{ $b.classification }}</td></tr>
+      <tr><td>Natural karaka</td><td>{{ $b.karaka }}</td></tr>
+      <tr><td>Purushartha</td><td>{{ $b.purushartha }}</td></tr>
+      <tr><td>Body correspondence</td><td>{{ $b.body }}</td></tr>
+      <tr><td>Main themes</td><td>{{ $b.themes }}</td></tr>
+      <tr><td>Considered strong when</td><td>{{ $b.strong_when }}</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  {{ .Content }}
+
+  {{ partial "ad-slot.html" (dict "Site" .Site "slot" "7777777777") }}
+
+  <div class="next-links">
+    <a href="{{ "tools/kundali-chart/" | relURL }}"><span>CHART</span>Which rashi falls in your {{ $b.number }}th bhava?</a>
+    <a href="{{ "graha/" | relURL }}"><span>GRAHAS</span>The nine grahas</a>
+    <a href="{{ "learn/whole-sign-houses/" | relURL }}"><span>METHOD</span>Why whole-sign houses</a>
+    <a href="{{ "bhava/" | relURL }}"><span>ALL</span>Every bhava</a>
+  </div>
+
+  <div class="prev-next">
+    <span>{{ with .PrevInSection }}<a href="{{ .RelPermalink }}">← {{ .Title }}</a>{{ end }}</span>
+    <span>{{ with .NextInSection }}<a href="{{ .RelPermalink }}">{{ .Title }} →</a>{{ end }}</span>
+  </div>
+</article>
+{{ end }}

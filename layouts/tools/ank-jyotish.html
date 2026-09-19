@@ -1,0 +1,22 @@
+{{ define "main" }}
+<article class="page">
+  {{ partial "crumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  <p class="lede">{{ .Description }}</p>
+  <div class="tool-panel" id="ank-tool">
+    <div class="form-grid">
+      <div><label>Date of birth</label><input type="date" data-date></div>
+      <div><label>Full name (optional)</label><input type="text" data-name placeholder="As commonly written"></div>
+    </div>
+    <div class="btn-row"><button class="btn" type="button" data-run>Calculate my numbers</button></div>
+    <div class="error-msg" data-error hidden></div>
+    <div class="result-panel" data-result hidden></div>
+  </div>
+  {{ .Content }}
+  {{ partial "ad-slot.html" (dict "Site" .Site "slot" "8888888888") }}
+  <script type="module">
+    import { initAnkTool } from "{{ "js/tools/ank-jyotish.js" | relURL }}";
+    initAnkTool();
+  </script>
+</article>
+{{ end }}
