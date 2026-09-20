@@ -1,5 +1,5 @@
 /**
- * JyotishVeda — kundali chart rendering.
+ * VedicJyoti — kundali chart rendering.
  *
  * North Indian style: the twelve bhavas are fixed on the diamond; the rashi
  * number moves. South Indian style: the twelve rashis are fixed on the grid;
@@ -55,16 +55,22 @@ export function renderNorthKundali(container, kundali, options = {}) {
     svg.appendChild(el("text", { x: cx, y: cy - 18, class: "rashi-num", "text-anchor": "middle" },
       `${house.rashi.index + 1}`));
 
-    const names = house.grahas.map((g) => (g.retrograde ? `${g.short}\u1d3f` : g.short));
-    names.forEach((n, idx) => {
+    house.grahas.forEach((g, idx) => {
       const row = Math.floor(idx / 3);
       const col = idx % 3;
-      svg.appendChild(el("text", {
-        x: cx + (col - 1) * 26,
-        y: cy + 2 + row * 14,
-        class: "graha-text",
-        "text-anchor": "middle",
-      }, n));
+      const tx = cx + (col - 1) * 26;
+      const ty = cy + 2 + row * 14;
+      const label = g.retrograde ? `${g.short}\u1d3f` : g.short;
+      const group = el("g", {
+        class: "graha-node",
+        tabindex: "0",
+        role: "button",
+        "aria-label": `${g.name} in ${house.rashi.name} — tap for details`,
+        "data-graha-open": g.key,
+      });
+      group.appendChild(el("circle", { cx: tx, cy: ty - 4, r: 12, class: "graha-hit" }));
+      group.appendChild(el("text", { x: tx, y: ty, class: "graha-text" + (g.retrograde ? " graha-retro" : ""), "text-anchor": "middle" }, label));
+      svg.appendChild(group);
     });
 
     if (house.number === 1) {
@@ -112,11 +118,18 @@ export function renderSouthKundali(container, kundali) {
 
     if (house) {
       house.grahas.forEach((g, idx) => {
-        svg.appendChild(el("text", {
-          x: x + 8 + (idx % 2) * 44,
-          y: y + 36 + Math.floor(idx / 2) * 16,
-          class: "graha-text",
-        }, g.retrograde ? `${g.short}\u1d3f` : g.short));
+        const tx = x + 8 + (idx % 2) * 44;
+        const ty = y + 36 + Math.floor(idx / 2) * 16;
+        const group = el("g", {
+          class: "graha-node",
+          tabindex: "0",
+          role: "button",
+          "aria-label": `${g.name} in ${house.rashi.name} — tap for details`,
+          "data-graha-open": g.key,
+        });
+        group.appendChild(el("circle", { cx: tx + 8, cy: ty - 4, r: 12, class: "graha-hit" }));
+        group.appendChild(el("text", { x: tx, y: ty, class: "graha-text" + (g.retrograde ? " graha-retro" : "") }, g.retrograde ? `${g.short}\u1d3f` : g.short));
+        svg.appendChild(group);
       });
     }
   }
@@ -124,4 +137,3 @@ export function renderSouthKundali(container, kundali) {
   container.appendChild(svg);
   return svg;
 }
-

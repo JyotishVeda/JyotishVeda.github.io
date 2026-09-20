@@ -762,3 +762,132 @@ select option { background: var(--night-2); color: var(--ink); }
   body { background: #fff; color: #000; }
 }
 
+/* ============================================================
+   Graha detail popup — append this file's contents to the end
+   of assets/css/main.css (or leave as-is; see README-GRAHA-POPUP.md
+   for how to include it if you'd rather not touch main.css).
+   ============================================================ */
+
+/* ---------- clickable graha nodes (chart + table) ---------- */
+
+.graha-node { cursor: pointer; }
+.graha-node .graha-hit { fill: transparent; }
+.graha-node:hover .graha-text,
+.graha-node:focus-visible .graha-text { fill: var(--marigold); font-weight: 700; }
+.graha-node:focus-visible .graha-hit {
+  fill: rgba(255, 196, 77, 0.14);
+  stroke: var(--marigold);
+  stroke-width: 1.5;
+}
+.graha-node:focus { outline: none; }
+
+.graha-row { cursor: pointer; transition: background 0.15s ease; }
+.graha-row:hover, .graha-row:focus-visible { background: rgba(255, 196, 77, 0.08); outline: none; }
+.graha-row-more {
+  color: var(--marigold);
+  font-size: 0.82rem;
+  white-space: nowrap;
+  text-align: right;
+}
+
+/* ---------- graha detail modal ---------- */
+
+body.graha-modal-open { overflow: hidden; }
+
+.graha-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: clamp(1rem, 5vh, 4rem) 1rem;
+  background: rgba(6, 4, 16, 0.72);
+  backdrop-filter: blur(6px);
+  overflow-y: auto;
+}
+.graha-modal-overlay[hidden] { display: none; }
+
+.graha-modal {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  background: linear-gradient(175deg, rgba(28, 23, 57, 0.98), rgba(13, 10, 31, 0.98));
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: clamp(1.3rem, 3vw, 2rem);
+  box-shadow: var(--shadow);
+}
+.graha-modal:focus { outline: none; }
+
+.graha-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--ink);
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.graha-modal-close:hover { background: var(--card-hi); }
+
+.graha-modal-head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-right: 2.5rem;
+  margin-bottom: 1rem;
+}
+.graha-modal-symbol {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  flex: 0 0 52px;
+  border-radius: 14px;
+  background: linear-gradient(140deg, rgba(255, 153, 51, 0.25), rgba(255, 196, 77, 0.08));
+  border: 1px solid var(--line);
+  font-size: 1.6rem;
+  color: var(--marigold);
+}
+.graha-modal-kicker {
+  margin: 0 0 0.15rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--saffron);
+}
+.graha-modal-head h3 { margin: 0; font-size: 1.25rem; }
+
+.graha-modal-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.1rem;
+}
+.pill-warn { background: rgba(226, 69, 47, 0.14); border-color: rgba(226, 69, 47, 0.4); color: #ff9d8b; }
+
+.graha-modal-body p {
+  color: var(--ink-dim);
+  font-size: 0.97rem;
+  line-height: 1.7;
+}
+.graha-modal-body p:first-child { color: var(--ink); }
+
+.graha-modal-foot {
+  margin: 1.2rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line-soft);
+  font-size: 0.8rem;
+  color: var(--ink-faint);
+}
+
+@media (max-width: 520px) {
+  .graha-modal-head { flex-wrap: wrap; }
+}
+

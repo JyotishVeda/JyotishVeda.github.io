@@ -3,6 +3,7 @@ import { formatDMS, formatSignDegrees } from "../vedic/ayanamsha.js";
 import { vimshottariMahadashas, currentDasha, formatDate, describeDuration } from "../vedic/dasha.js";
 import { renderNorthKundali, renderSouthKundali } from "../visualization/kundali-svg.js";
 import { wireBirthForm, readBirthForm, showError, clearError, reveal, cell } from "./birth-form.js";
+import { wireGrahaTriggers } from "./graha-modal.js";
 
 export function initKundaliTool(rootSelector = "#kundali-tool") {
   const root = document.querySelector(rootSelector);
@@ -12,6 +13,8 @@ export function initKundaliTool(rootSelector = "#kundali-tool") {
 
   let lastKundali = null;
   let style = "north";
+
+  wireGrahaTriggers(root, () => lastKundali);
 
   root.querySelector("[data-run]")?.addEventListener("click", () => {
     clearError(root);
@@ -63,19 +66,21 @@ function render(root, kundali, input, style) {
 
   const rows = kundali.grahas.order.map((key) => {
     const g = kundali.grahas[key];
-    return `<tr>
+    return `<tr class="graha-row" data-graha-open="${key}" tabindex="0" role="button" aria-label="${g.name} details">
       <td><strong>${g.name}</strong> <span class="muted">(${g.english})</span></td>
       <td>${g.rashi.name}</td>
       <td class="mono">${formatSignDegrees(g.longitude)}</td>
       <td>${g.house}</td>
       <td>${g.nakshatra.name} <span class="muted">p${g.nakshatra.pada}</span></td>
       <td>${g.retrograde ? "Vakri (R)" : "Direct"}</td>
+      <td class="graha-row-more">Details →</td>
     </tr>`;
   }).join("");
 
   root.querySelector("[data-grahas]").innerHTML = `
+    <p class="field-note">Tap any graha — in the chart or in this table — for a full reading of that placement.</p>
     <div class="table-wrap"><table>
-      <thead><tr><th>Graha</th><th>Rashi</th><th>Degree</th><th>Bhava</th><th>Nakshatra</th><th>Motion</th></tr></thead>
+      <thead><tr><th>Graha</th><th>Rashi</th><th>Degree</th><th>Bhava</th><th>Nakshatra</th><th>Motion</th><th></th></tr></thead>
       <tbody>${rows}</tbody>
     </table></div>`;
 
