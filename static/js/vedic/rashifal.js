@@ -13,8 +13,8 @@ import { RASHIS, rashiByKey, countFrom } from "./rashi.js";
 
 /** Classical gochar strength of the Moon counted from the janma rashi. */
 const CHANDRA_GOCHAR = {
-  1:  { score: -1, theme: "restlessness and a wandering mind", advice: "Keep the day's list short and avoid taking on someone else's problem." },
-  2:  { score: 2,  theme: "money, food and family conversation", advice: "A good day for domestic accounts and for saying the thing you have been postponing." },
+  1:  { score: 2,  theme: "self, mood and personal initiative", advice: "Use the day to reset your priorities and act deliberately rather than reactively." },
+  2:  { score: -1, theme: "money, food and family conversation", advice: "Keep spending and important family conversations measured; do not rush commitments." },
   3:  { score: 3,  theme: "courage, short travel and siblings", advice: "Initiative is supported today — make the call you have been avoiding." },
   4:  { score: -1, theme: "home, mother and emotional weather indoors", advice: "Domestic friction is easy to start and hard to stop. Slow the pace at home." },
   5:  { score: -1, theme: "children, study and speculation", advice: "Study is fine; speculation is not. Keep money out of experiments today." },
