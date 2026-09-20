@@ -15,7 +15,6 @@ and are fixed before anything else.
 
 **Email:** mankeshwaracreations@gmail.com
 
-Replace this address with your own before publishing the site.
 
 We usually reply within a few working days. Messages are read by a person.
 
