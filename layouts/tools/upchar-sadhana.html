@@ -1,0 +1,38 @@
+{{ define "main" }}
+<article class="page wide">
+  {{ partial "crumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  <p class="lede">{{ .Description }}</p>
+
+  <div class="tool-panel" id="upchar-tool">
+    <p class="eyebrow">BIRTH DETAILS</p>
+    {{ partial "birth-form.html" (dict "showTime" true) }}
+    <p class="field-note">Computed from your actual chart — which houses each graha rules from your lagna, its dignity, its house and the dasha currently running — not a generic list by sun sign.</p>
+    <div class="btn-row"><button class="btn" type="button" data-run>Generate my remedy guidance</button></div>
+    <div class="error-msg" data-error hidden></div>
+
+    <div class="result-panel" data-result hidden>
+      <div data-summary></div>
+
+      <h2>Priority at a glance</h2>
+      <p class="small muted">Sorted by how much classical attention each graha's current placement calls for. This is a starting point for reading the detail below, not a ranking of importance in your life.</p>
+      <div class="pill-row" data-priority></div>
+
+      <h2>Right now: your running dasha</h2>
+      <div data-dasha-remedy></div>
+
+      {{ partial "ad-slot.html" (dict "Site" .Site "slot" "8888888888") }}
+
+      <h2>Every graha, in detail</h2>
+      <div data-all-grahas></div>
+    </div>
+  </div>
+
+  {{ .Content }}
+
+  <script type="module">
+    import { initUpcharTool } from "{{ "js/tools/upchar-tool.js" | relURL }}";
+    initUpcharTool();
+  </script>
+</article>
+{{ end }}

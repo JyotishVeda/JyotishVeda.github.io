@@ -891,3 +891,27 @@ body.graha-modal-open { overflow: hidden; }
   .graha-modal-head { flex-wrap: wrap; }
 }
 
+/* ---------- upchar / sadhana remedy cards ---------- */
+
+.pill-ok { background: rgba(47, 158, 120, 0.16); border-color: rgba(47, 158, 120, 0.4); color: #7fe3bf; }
+.pill-neutral { background: rgba(255, 196, 77, 0.10); border-color: var(--line); color: var(--sandal); }
+
+.remedy-card {
+  border: 1px solid var(--line-soft);
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 1.2rem 1.3rem;
+  margin-bottom: 1rem;
+}
+.remedy-card h4 {
+  margin: 0.9rem 0 0.35rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--saffron);
+}
+.remedy-card-emphasis {
+  border-color: rgba(255, 196, 77, 0.5);
+  background: linear-gradient(170deg, rgba(255, 153, 51, 0.10), rgba(255, 255, 255, 0.02));
+}
+

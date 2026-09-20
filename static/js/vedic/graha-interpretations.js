@@ -171,7 +171,7 @@ export const GRAHA_DIGNITY = Object.freeze({
 });
 
 /** Natural friendship table for the seven classical grahas (Parashari). */
-const RELATIONS = Object.freeze({
+export const RELATIONS = Object.freeze({
   surya:   { friends: ["chandra", "mangal", "guru"], enemies: ["shukra", "shani"] },
   chandra: { friends: ["surya", "budha"], enemies: [] },
   mangal:  { friends: ["surya", "chandra", "guru"], enemies: ["budha"] },
@@ -182,7 +182,7 @@ const RELATIONS = Object.freeze({
 });
 
 /** rashi key -> graha key of its lord. */
-const RASHI_LORD_KEY = Object.freeze({
+export const RASHI_LORD_KEY = Object.freeze({
   mesha: "mangal", vrishabha: "shukra", mithuna: "budha", karka: "chandra",
   simha: "surya", kanya: "budha", tula: "shukra", vrishchika: "mangal",
   dhanu: "guru", makara: "shani", kumbha: "shani", meena: "guru",
@@ -242,7 +242,7 @@ function benMal(grahaKey) {
 
 /* ---------------------------------------------------------------- dignity ---------------------------------------------------------------- */
 
-function dignityOf(grahaKey, rashiKey) {
+export function dignityOf(grahaKey, rashiKey) {
   const d = GRAHA_DIGNITY[grahaKey];
   if (d.moolatrikona === rashiKey) return "moolatrikona";
   if (d.own.includes(rashiKey)) return "own";
@@ -256,7 +256,7 @@ function dignityOf(grahaKey, rashiKey) {
   return "neutral";
 }
 
-const DIGNITY_LABEL = Object.freeze({
+export const DIGNITY_LABEL = Object.freeze({
   own: "Own sign", moolatrikona: "Moolatrikona", exalted: "Exalted",
   debilitated: "Debilitated", friend: "Friendly sign", enemy: "Enemy sign", neutral: "Neutral sign",
 });
