@@ -6,7 +6,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 C = os.path.join(ROOT, "content")
 
 def load(name):
-    with open(os.path.join(ROOT, "data", name)) as f:
+    with open(os.path.join(ROOT, "data", name), encoding="utf-8") as f:
         return yaml.safe_load(f)
 
 rashi = load("rashi.yaml")
@@ -60,7 +60,7 @@ def classification_note(c):
 def write(path, text):
     full = os.path.join(C, path)
     os.makedirs(os.path.dirname(full), exist_ok=True)
-    with open(full, "w") as f:
+    with open(full, "w", encoding="utf-8", newline="\n") as f:
         f.write(text.strip() + "\n")
 
 def fm(**kw):

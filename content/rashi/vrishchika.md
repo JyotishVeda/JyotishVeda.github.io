@@ -12,7 +12,7 @@ date: "2026-01-15"
 
 Vrishchika is the stretch of the sidereal zodiac from 210° – 240°, counted from the fixed
 star reference point rather than from the spring equinox. That difference — the ayanamsha —
-is currently a little under 24°, which is why a person called Scorpio by a Western
+is currently a little over 24°, which is why a person called Scorpio by a Western
 magazine is often a different rashi in Jyotish. The rashi that matters most in Indian
 astrology is the one holding the **Moon** at birth, not the Sun.
 

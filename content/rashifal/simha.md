@@ -21,10 +21,10 @@ years — those set the background tone.
 
 ## What the transit houses mean
 
-Counting from your janma rashi, the Moon is traditionally favourable in the 1st…well, not the
-1st. The classical Chandra gochar rule treats the 3rd, 6th, 7th, 10th and 11th from the janma
-rashi as supportive and the 4th, 8th and 12th as difficult. The reading above states which
-house the Moon occupies today so you can check the logic rather than take the verdict.
+Counting from your janma rashi, this site uses the classical Chandra gochar rule that treats the
+1st, 3rd, 6th, 7th, 10th and 11th from the janma rashi as favourable, while the 2nd, 4th, 5th,
+8th, 9th and 12th are not counted among the favourable houses. The basic rule is shown here
+without adding separate Vedha exceptions, so you can check the logic rather than take the verdict.
 
 ## Using it honestly
 
