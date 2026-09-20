@@ -17,7 +17,7 @@ different bodies in different places.
 
 **The zodiac.** Western astrology measures from the spring equinox, which drifts backwards
 about 50 arcseconds each year. Indian astrology measures from a fixed stellar reference. The
-gap between the two — the ayanamsha — is currently a little under 24°, roughly four-fifths of
+gap between the two — the ayanamsha — is currently a little over 24°, roughly four-fifths of
 a rashi.
 
 Between them, the two differences mean your janma rashi is usually not the sign you grew up
