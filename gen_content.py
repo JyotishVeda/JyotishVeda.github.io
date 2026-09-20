@@ -2,7 +2,7 @@
 """Generate the data-driven markdown pages for JyotishVeda from the YAML datasets."""
 import os, yaml, textwrap
 
-ROOT = "/home/claude/JyotishVeda"
+ROOT = os.path.dirname(os.path.abspath(__file__))
 C = os.path.join(ROOT, "content")
 
 def load(name):
@@ -85,7 +85,7 @@ for key, r in rashi.items():
 
 {r['name']} is the stretch of the sidereal zodiac from {r['span']}, counted from the fixed
 star reference point rather than from the spring equinox. That difference — the ayanamsha —
-is currently a little under 24°, which is why a person called {r['english']} by a Western
+is currently a little over 24°, which is why a person called {r['english']} by a Western
 magazine is often a different rashi in Jyotish. The rashi that matters most in Indian
 astrology is the one holding the **Moon** at birth, not the Sun.
 
@@ -386,10 +386,10 @@ years — those set the background tone.
 
 ## What the transit houses mean
 
-Counting from your janma rashi, the Moon is traditionally favourable in the 1st…well, not the
-1st. The classical Chandra gochar rule treats the 3rd, 6th, 7th, 10th and 11th from the janma
-rashi as supportive and the 4th, 8th and 12th as difficult. The reading above states which
-house the Moon occupies today so you can check the logic rather than take the verdict.
+Counting from your janma rashi, this site uses the classical Chandra gochar rule that treats the
+1st, 3rd, 6th, 7th, 10th and 11th from the janma rashi as favourable, while the 2nd, 4th, 5th,
+8th, 9th and 12th are not counted among the favourable houses. The basic rule is shown here
+without adding separate Vedha exceptions, so you can check the logic rather than take the verdict.
 
 ## Using it honestly
 
