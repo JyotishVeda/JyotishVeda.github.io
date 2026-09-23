@@ -4,7 +4,7 @@ date: 2026-09-23
 description: "How JyotishVeda handles data: birth-chart calculations run in your browser, while the optional Find place feature sends the place name to OpenStreetMap Nominatim for coordinate lookup. Birth details can also be remembered locally in your browser."
 ---
 
-*Last updated: 15 January 2026*
+*Last updated: 23 July 2026*
 
 ## The short version
 
