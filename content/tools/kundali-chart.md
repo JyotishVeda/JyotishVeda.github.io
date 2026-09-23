@@ -6,8 +6,6 @@ icon: "◈"
 weight: 1
 date: 2026-01-15
 description: "Generate a full Vedic birth chart — lagna, nine grahas with degrees and nakshatras, whole-sign bhavas and the complete Vimshottari dasha sequence, in North or South Indian style."
-aliases:
-  - /kundali/
 ---
 
 ## What the chart contains
@@ -45,5 +43,7 @@ is the fraction of that lord's period already spent before birth. The
 
 ## Privacy
 
-Every calculation happens in your browser. Birth date, time and place are never transmitted,
-logged or stored anywhere.
+Every calculation happens in your browser. Birth date, time and place are never transmitted to
+or logged by this site. By default your browser remembers them locally so you don't have to
+retype them on other tools here — switch that off or clear it any time from the form itself.
+See the [Privacy Policy](/privacy-policy/) for the full detail.

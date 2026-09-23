@@ -1,7 +1,7 @@
 ---
 title: "Privacy Policy"
 date: 2026-01-15
-description: "How JyotishVeda handles data: birth details never leave your browser, plus the standard disclosures for analytics, cookies and third-party advertising."
+description: "How JyotishVeda handles data: birth details are processed only in your browser and, by default, remembered there via local storage under your control — plus the standard disclosures for analytics, cookies and third-party advertising."
 ---
 
 *Last updated: 15 January 2026*
@@ -9,17 +9,27 @@ description: "How JyotishVeda handles data: birth details never leave your brows
 ## The short version
 
 Birth details you enter into any calculator on this site are processed entirely inside your
-browser. They are never transmitted to any server, never stored, never logged and never sold.
-Close the tab and they are gone.
+browser. They are never transmitted to any server, never logged, and never sold.
+
+By default, the details you enter are also **remembered on your own device** — saved in your
+browser's local storage — so you don't have to retype them on every tool. This is a convenience
+you control: each birth-details form has a "Remember these details on this device" checkbox
+you can switch off, and a "Forget & enter new" button that clears whatever is saved
+immediately. Clearing your browser's site data, or using a private/incognito window, also
+clears it. This storage never leaves your device and this site never reads it back to a server
+— it exists only so the browser you're using right now can pre-fill the form for you next time.
 
 ## Information we do not collect
 
-- Names, dates, times or places of birth entered into the tools
+- Names, dates, times or places of birth entered into the tools — this site's own servers
+  never receive them (see the local-storage note above for what your *browser* may remember
+  on your behalf)
 - Calculated charts, dasha sequences, matching results or any other output
 - Accounts, since the site has none
 
 There is no form on this site that submits birth data anywhere. The calculations run in
-JavaScript on your own device.
+JavaScript on your own device, and any memory of what you typed stays in that browser's
+local storage — under your control, and never sent to us.
 
 ## Information that may be collected automatically
 
@@ -27,11 +37,14 @@ Like most websites, standard web-server logs and any analytics service in use ma
 address, browser type and version, device type, referring page, pages visited and timestamps.
 This is aggregate technical information used to understand traffic and keep the site working.
 
-## Cookies
+## Cookies and local storage
 
-The site itself does not set cookies for tracking purposes. Third-party services described
-below may set their own cookies. You can block or delete cookies in your browser settings;
-the calculators will continue to work normally.
+The site itself does not set cookies for tracking purposes. It does use your browser's local
+storage — a different, non-cookie mechanism — to optionally remember birth details you enter,
+as described above; this is not shared with, or readable by, any other website. Third-party
+services described below may set their own cookies. You can block or delete cookies, and clear
+local storage, in your browser settings; the calculators will continue to work normally either
+way.
 
 ## Advertising
 

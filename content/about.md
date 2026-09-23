@@ -47,3 +47,4 @@ something it is not.
 Birth details are processed entirely in your browser. Nothing is uploaded, stored or sold.
 See the [Privacy Policy](/privacy-policy/) for the full position.
 
+

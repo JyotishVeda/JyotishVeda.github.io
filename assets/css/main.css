@@ -915,3 +915,102 @@ body.graha-modal-open { overflow: hidden; }
   background: linear-gradient(170deg, rgba(255, 153, 51, 0.10), rgba(255, 255, 255, 0.02));
 }
 
+/* ---------- saved birth-details memory ---------- */
+
+.saved-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  padding: 0.65rem 0.9rem;
+  margin-bottom: 0.9rem;
+  border: 1px solid rgba(47, 158, 120, 0.35);
+  background: rgba(47, 158, 120, 0.10);
+  border-radius: var(--radius-sm);
+  color: #bdeeda;
+  font-size: 0.88rem;
+}
+.saved-banner[hidden] { display: none; }
+
+.btn-mini {
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  font-family: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn-mini:hover { background: var(--card-hi); }
+
+.remember-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin: 0.7rem 0 0;
+  font-size: 0.84rem;
+  color: var(--ink-faint);
+  text-transform: none;
+  letter-spacing: normal;
+  cursor: pointer;
+}
+.remember-row input[type="checkbox"] {
+  width: auto;
+  margin-top: 0.2rem;
+  accent-color: var(--saffron);
+}
+
+/* Birth-memory controls for the Nominatim Find Place form */
+
+.remember-birth {
+  margin-top: 0.75rem;
+}
+
+.remember-birth label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--ink-dim);
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.remember-birth input {
+  accent-color: var(--saffron);
+}
+
+.remember-birth small {
+  color: var(--ink-faint);
+}
+
+.saved-birth-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.9rem;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-sm);
+  background: var(--card);
+  color: var(--ink-dim);
+  font-size: 0.85rem;
+}
+
+.saved-birth-banner[hidden] {
+  display: none;
+}
+
+.saved-birth-banner .btn {
+  flex-shrink: 0;
+}
+
+@media (max-width: 700px) {
+  .saved-birth-banner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

@@ -1,4 +1,5 @@
 {{/* Usage: {{ partial "birth-form.html" (dict "who" "" "showTime" true) }} */}}
+
 <div class="form-grid"{{ with .who }} data-birth="{{ . }}"{{ end }}>
   <div>
     <label for="date-{{ .who | default "main" }}">Date of birth</label>
@@ -27,6 +28,29 @@
       </button>
     </div>
   </div>
+</div>
+
+<div
+  class="saved-birth-banner"
+  data-saved-banner
+  hidden
+>
+  <span data-saved-banner-text></span>
+  <button type="button" class="btn btn-ghost" data-forget>
+    Forget &amp; enter new
+  </button>
+</div>
+
+<div class="remember-birth">
+  <label>
+    <input
+      type="checkbox"
+      data-remember
+      checked
+    >
+    Remember these details on this device
+    <small>(saved only in your browser, never sent anywhere)</small>
+  </label>
 </div>
 
 <div class="place-result" data-place-result hidden>

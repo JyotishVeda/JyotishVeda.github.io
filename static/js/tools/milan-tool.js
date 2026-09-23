@@ -28,7 +28,10 @@ export function initMilanTool(rootSelector = "#milan-tool") {
   if (!root) return;
   fillSelectors(root);
 
-  root.querySelectorAll("[data-birth]").forEach((section) => wireBirthForm(section));
+  root.querySelectorAll("[data-birth]").forEach((section) => {
+    const who = section.dataset.birth;
+    wireBirthForm(section, { profile: who === "girl" ? "partner" : "primary" });
+  });
 
   root.querySelectorAll("[data-derive]").forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -36,7 +39,7 @@ export function initMilanTool(rootSelector = "#milan-tool") {
       const section = root.querySelector(`[data-birth="${who}"]`);
       clearError(root);
       try {
-        const input = readBirthForm(section);
+        const input = readBirthForm(section, { profile: who === "girl" ? "partner" : "primary" });
         const k = buildKundali(input.dateUTC, input.lat, input.lon);
         root.querySelector(`[data-rashi-select][data-who="${who}"]`).value = k.janmaRashi.key;
         root.querySelector(`[data-nakshatra-select][data-who="${who}"]`).value = String(k.janmaNakshatra.number);
