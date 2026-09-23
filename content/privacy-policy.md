@@ -1,50 +1,74 @@
 ---
 title: "Privacy Policy"
 date: 2026-01-15
-description: "How JyotishVeda handles data: birth details are processed only in your browser and, by default, remembered there via local storage under your control — plus the standard disclosures for analytics, cookies and third-party advertising."
+description: "How JyotishVeda handles data: birth-chart calculations run in your browser, while the optional Find place feature sends the place name to OpenStreetMap Nominatim for coordinate lookup. Birth details can also be remembered locally in your browser."
 ---
 
 *Last updated: 15 January 2026*
 
 ## The short version
 
-Birth details you enter into any calculator on this site are processed entirely inside your
-browser. They are never transmitted to any server, never logged, and never sold.
+Birth-chart calculations are performed in your browser. The birth date and birth time you enter
+are not sent to JyotishVeda's servers.
 
-By default, the details you enter are also **remembered on your own device** — saved in your
-browser's local storage — so you don't have to retype them on every tool. This is a convenience
-you control: each birth-details form has a "Remember these details on this device" checkbox
-you can switch off, and a "Forget & enter new" button that clears whatever is saved
+When you use the **"Find place"** feature, the place name you enter is sent to the OpenStreetMap
+Nominatim geocoding service to look up the location's latitude and longitude. The birth date
+and birth time are not sent as part of this place lookup.
+
+The returned coordinates are then used by your browser to determine the applicable timezone and
+perform the birth-chart calculations locally.
+
+By default, the birth details you enter are also **remembered on your own device** — saved in
+your browser's local storage — so you don't have to retype them on every tool. This is a
+convenience you control: each birth-details form has a "Remember these details on this device"
+checkbox you can switch off, and a "Forget & enter new" button that clears whatever is saved
 immediately. Clearing your browser's site data, or using a private/incognito window, also
-clears it. This storage never leaves your device and this site never reads it back to a server
-— it exists only so the browser you're using right now can pre-fill the form for you next time.
+clears it.
+
+The saved details remain in your browser's local storage and are not sent to JyotishVeda's
+servers.
 
 ## Information we do not collect
 
-- Names, dates, times or places of birth entered into the tools — this site's own servers
-  never receive them (see the local-storage note above for what your *browser* may remember
-  on your behalf)
-- Calculated charts, dasha sequences, matching results or any other output
-- Accounts, since the site has none
+- Birth dates and birth times are not submitted to JyotishVeda's servers.
+- Calculated charts, dasha sequences, matching results or any other output are not submitted
+  to JyotishVeda's servers.
+- The birth details remembered by the site's tools are stored only in your browser's local
+  storage.
+- Accounts, since the site has none.
 
-There is no form on this site that submits birth data anywhere. The calculations run in
-JavaScript on your own device, and any memory of what you typed stays in that browser's
-local storage — under your control, and never sent to us.
+The optional **"Find place"** feature is different: the place name you enter is sent to the
+OpenStreetMap Nominatim geocoding service so that the browser can obtain geographic coordinates.
+The birth date and birth time are not included in that place lookup.
 
 ## Information that may be collected automatically
 
 Like most websites, standard web-server logs and any analytics service in use may record IP
 address, browser type and version, device type, referring page, pages visited and timestamps.
+
 This is aggregate technical information used to understand traffic and keep the site working.
+
+## Place lookup
+
+When you use the **"Find place"** feature, the place name you enter is sent to the OpenStreetMap
+Nominatim geocoding service to find the location's latitude and longitude. The birth date and
+birth time are not sent as part of this place lookup.
+
+The returned coordinates are then used by your browser to determine the applicable timezone and
+perform the birth-chart calculations locally.
+
+Nominatim is a third-party service operated as part of the OpenStreetMap ecosystem. Its use is
+subject to the applicable OpenStreetMap/Nominatim policies and usage requirements.
 
 ## Cookies and local storage
 
 The site itself does not set cookies for tracking purposes. It does use your browser's local
 storage — a different, non-cookie mechanism — to optionally remember birth details you enter,
-as described above; this is not shared with, or readable by, any other website. Third-party
-services described below may set their own cookies. You can block or delete cookies, and clear
-local storage, in your browser settings; the calculators will continue to work normally either
-way.
+as described above. This local storage is not shared with, or readable by, other websites.
+
+Third-party services described below may set their own cookies. You can block or delete cookies,
+and clear local storage, in your browser settings; the calculators will continue to work
+normally either way.
 
 ## Advertising
 
@@ -58,15 +82,19 @@ You may opt out of personalised advertising by visiting **Google Ads Settings**
 (google.com/settings/ads). You can also opt out of a third-party vendor's use of cookies for
 personalised advertising at **aboutads.info**.
 
-Advertising partners receive only the standard technical information above. They do not
-receive birth details, because birth details never leave your browser.
+Advertising partners receive only the standard technical information described above. They do
+not receive the birth date or birth time entered into the calculators. The place name used with
+the optional Find place feature is sent to OpenStreetMap Nominatim for geocoding as described
+above.
 
 ## Your rights
 
 Depending on where you live, you may have rights to access, correct or delete personal
 information held about you, and to object to certain processing. Since this site holds no
-personal accounts and no birth data, such requests will generally concern server logs or
-advertising identifiers. Contact us using the details on the [Contact](/contact/) page.
+personal accounts and no birth data on its own servers, such requests will generally concern
+server logs or advertising identifiers.
+
+Contact us using the details on the [Contact](/contact/) page.
 
 ## Children
 
@@ -82,4 +110,3 @@ practices; please read their policies separately.
 
 This policy may be updated from time to time. Material changes will be reflected in the date
 at the top of this page.
-
