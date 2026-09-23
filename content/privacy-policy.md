@@ -1,6 +1,6 @@
 ---
 title: "Privacy Policy"
-date: 2026-01-15
+date: 2026-09-23
 description: "How JyotishVeda handles data: birth-chart calculations run in your browser, while the optional Find place feature sends the place name to OpenStreetMap Nominatim for coordinate lookup. Birth details can also be remembered locally in your browser."
 ---
 
