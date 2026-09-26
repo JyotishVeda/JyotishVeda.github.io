@@ -6,7 +6,7 @@ enableRobotsTXT = true
 [params]
   description = "Vedic astrology (Jyotish) explained with real calculations — rashis, nakshatras, grahas, bhavas, panchang, dashas, kundali matching and free Jyotish tools."
   tagline = "Jyotish, calculated openly."
-  adsenseClientId = ""
+  adsenseClientId = "ca-pub-8700847026980523"
   ayanamsha = "Lahiri (Chitrapaksha)"
 
 [menu]
